@@ -100,5 +100,5 @@
     },
     "installable": True,
     "application": True,
-    "images": ['static/description/icon.png'],
+    "images": ['static/description/icon.gif'],
 }
