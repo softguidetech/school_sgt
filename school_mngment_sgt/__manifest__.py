@@ -6,7 +6,9 @@
     'version': '16.0.1.0.0',
     'category': 'School Management',
     'summary': 'A Module For School Management',
-    'author': "SOFT GUIDE TECHNOLOGY",
+    'author': "SGT",
+     'price': 650.00,
+    'currency': "EUR",
     'website': "http://www.softguidetech.com",
     "depends": ["stock", "purchase", "hr", "crm", "delivery", "account", "fleet", "event", "rating"],
     'data': [
