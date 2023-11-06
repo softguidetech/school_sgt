@@ -7,8 +7,8 @@
     'category': 'School Management',
     'summary': 'A Module For School Management',
     'author': "SGT",
-    #  'price': 35.00,
-    # 'currency': "EUR",
+     'price': 35.00,
+    'currency': "EUR",
     'website': "http://www.softguidetech.com",
     "depends": ["stock", "purchase", "hr", "crm", "delivery", "account", "fleet", "event", "rating"],
     'data': [
@@ -100,5 +100,5 @@
     },
     "installable": True,
     "application": True,
-    "images": ['static/description/website.png'],
+    "images": ['static/description/icon.gif'],
 }
