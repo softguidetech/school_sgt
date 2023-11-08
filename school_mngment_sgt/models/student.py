@@ -65,8 +65,8 @@ class StudentStudent(models.Model):
             access_rights_uid=None,
     ):
         """Method to get student of parent having group teacher"""
-        teacher_group = self.env.user.has_group("School Management SGT.group_school_teacher")
-        parent_grp = self.env.user.has_group("School Management SGT.group_school_parent")
+        teacher_group = self.env.user.has_group("school_mngment_sgt.group_school_teacher")
+        parent_grp = self.env.user.has_group("school_mngment_sgt.group_school_parent")
         login_user_rec = self.env.user
         name = self._context.get("student_id")
         if name and teacher_group and parent_grp:
@@ -108,7 +108,7 @@ class StudentStudent(models.Model):
     @api.depends("state")
     def _compute_teacher_user(self):
         """Compute teacher boolean field if user form teacher group"""
-        teacher = self.env.user.has_group("School Management SGT.group_school_teacher")
+        teacher = self.env.user.has_group("school_mngment_sgt.group_school_teacher")
         for rec in self:
             rec.teachr_user_grp = False
             if teacher and rec.state == "done":

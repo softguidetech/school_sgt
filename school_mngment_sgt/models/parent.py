@@ -78,7 +78,7 @@ class SchoolParent(models.Model):
         """Inherited create method to assign values in
         the users record to maintain the delegation"""
         res = super(SchoolParent, self).create(vals)
-        parent_grp_id = self.env.ref("School Management SGT.group_school_parent")
+        parent_grp_id = self.env.ref("school_mngment_sgt.group_school_parent")
         emp_grp = self.env.ref("base.group_user")
         self.env["res.users"].create(
             {

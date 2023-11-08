@@ -430,9 +430,11 @@
             <form string="Card Details">
                 <header>
                     <button name="running_state" type="object" string="Confirm"
-                            attrs="{'invisible':[('state', '=', 'running')]}" groups="school_mngment_sgt.group_librarian"/>
+                            attrs="{'invisible':[('state', '=', 'running')]}"
+                            groups="school_mngment_sgt.group_librarian"/>
                     <button name="draft_state" type="object" string="Draft State"
-                            attrs="{'invisible':[('state', '=', 'draft')]}" groups="school_mngment_sgt.group_librarian"/>
+                            attrs="{'invisible':[('state', '=', 'draft')]}"
+                            groups="school_mngment_sgt.group_librarian"/>
                     <field name="state" widget="statusbar" readonly="1"/>
                 </header>
                 <sheet>
@@ -517,7 +519,8 @@
                             attrs="{'invisible':['|',('ebook_check','=',True),('state','not in',['issue','reissue'])]}"
                             groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_librarian"/>
                     <button name="issue_book" type="object" string="Book Issue" class="fa fa-check-circle"
-                            states="draft" groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_librarian"/>
+                            states="draft"
+                            groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_librarian"/>
                     <button name="reissue_book" type="object" class="fa fa-reply" string="Book Reissue"
                             attrs="{'invisible':['|',('ebook_check','=',True),('state','not in',['issue'])]}"
                             groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_librarian"/>
@@ -533,7 +536,8 @@
                             attrs="{'invisible':['&amp;',('state','not in',['return','lost']),'|',('penalty','&lt;',1.0),('lost_penalty','&lt;',1.0)]}"
                             groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_librarian"/>
                     <button name="subscription_pay" class="fa fa-circle" string="Subscription Payment" type="object"
-                            states="subscribe" groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_librarian"/>
+                            states="subscribe"
+                            groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_librarian"/>
                     <field name="state" widget="statusbar" statusbar_visible="draft,issue,fine,cancel" align="right"
                            readonly="1"/>
                 </header>
@@ -703,7 +707,8 @@
     </record>
     <!--Menu Item Of Library Book Issue -->
     <menuitem id="menu_book_issue_sub_form" name="Book Issues" parent="menu_library" action="action_library_book_list1"
-              sequence="73" groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_librarian,school_mngment_sgt.group_userian"/>
+              sequence="73"
+              groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_librarian,school_mngment_sgt.group_userian"/>
     <!-- Form View Of Library Book Request -->
     <record id="view_book_library_req_form" model="ir.ui.view">
         <field name="name">library.book.req.form</field>
@@ -1144,7 +1149,7 @@
         <field name="model">product.supplierinfo</field>
         <field name="arch" type="xml">
             <field name="partner_id" domain="[('supplier','=',True)]"/>
-<!--            <field name="name" domain="[('supplier','=',True)]"/>-->
+            <!--            <field name="name" domain="[('supplier','=',True)]"/>-->
         </field>
     </record>
     <!-- Inherited Form View Of Account Invoice Line -->
@@ -1153,10 +1158,14 @@
         <field name="inherit_id" ref="account.view_move_form"/>
         <field name="model">account.move</field>
         <field name="arch" type="xml">
-            <field name="discount" position="after">
+            <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='account_id']" position="before">
                 <field name="customer_ref" select="1"/>
                 <field name="production_lot_id" select="1"/>
-            </field>
+            </xpath>
+            <!--            <field name="discount" position="after">-->
+            <!--                <field name="customer_ref" select="1"/>-->
+            <!--                <field name="production_lot_id" select="1"/>-->
+            <!--            </field>-->
         </field>
     </record>
     <!-- Menu Item Of Author -->
