@@ -213,6 +213,59 @@ footer {
   height: 8px;
 }
 
+
+
+
+
+
+/* Contact Us */
+.contact-is {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-us > input {
+  border: 1px solid var(--button-border);
+  color: var(--text-color);
+  outline: none;
+  min-height: 36px;
+  background-color: #d3d3d3;
+  font-size: 1.2rem;
+  flex: 1 0 120px;
+  padding: 8px 12px;
+  border-radius: 0; /* Remove border-radius for rectangles */
+}
+
+.contact-us > input::placeholder {
+  color: var(--text-color);
+}
+
+.contact-us > button {
+  cursor: pointer;
+  background-color: var(--button-color);
+  color: #000000;
+  min-width: 200px;
+  min-height: 36px;
+  height: 42px;
+  width: 200px;
+  flex: 1 0 80px;
+  white-space: nowrap;
+  font-family: Helvetica;
+  font-weight: bold;
+  border: 0px;
+  outline: none;
+  border: 1px solid var(--button-border);
+  border-radius: 0; /* Remove border-radius for rectangles */
+}
+
+
+
+
+
+
+
+
 /*? footer subscribe */
 .footer-subscribe {
   display: flex;

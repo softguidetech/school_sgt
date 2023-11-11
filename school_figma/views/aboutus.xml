@@ -1,0 +1,1241 @@
+<odoo>
+    <data>
+        <record id="menu_about" model="website.menu">
+            <field name="name">About Us</field>
+            <field name="url">/about</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">20</field>
+        </record>
+
+        <record id="school_figma.about" model="website.page">
+            <field name="name">About Us</field>
+            <field name="type">qweb</field>
+            <field name="url">/about</field>
+            <field name="is_published">True</field>
+            <field name="key">school_figma.about</field>
+            <field name="arch" type="xml">
+                <t name="About Us" t-name="school_figma.about">
+                    <t t-call="website.layout">
+                        <div class="oe_structure"/>
+                        <div id="wrap">
+                            <section class="s_title o_colored_level pb0 pt0 o_cc o_cc2 bg-200" data-vcss="001"
+                                     data-snippet="s_title" data-name="Title" style="background-image: none;">
+                                <div class="s_allow_columns container">
+                                    <h1 style="text-align: center;">
+                                        <font style="font-size: 62px;" class="o_default_snippet_text">
+
+
+                                        </font>
+                                    </h1>
+                                    <h1 style="text-align: center;">
+                                        <br/>
+                                    </h1>
+                                    <h1 style="text-align: left;">
+                                        <font class="text-black">About Us</font>
+                                    </h1>
+                                    <h1 style="text-align: center;">
+                                        <font style="font-size: 62px;" class="o_default_snippet_text">
+
+
+                                        </font>
+                                        <font class="text-o-color-4">​</font>
+                                        <br/>
+                                    </h1>
+                                </div>
+                            </section>
+                            <section class="s_three_columns pt32 pb32 o_colored_level o_cc o_cc1" data-vcss="001"
+                                     data-snippet="s_three_columns" data-name="Columns" style="background-image: none;">
+                                <div class="container">
+                                    <div class="row d-flex align-items-center">
+
+                                        <div class="s_col_no_bgcolor pb16 pt0 col-lg-4">
+                                            <div class="card text-bg-white h-100 border"
+                                                 style="border-width: 0px !important;">&amp;nbsp;&amp;nbsp;
+                                                <img src="/school_figma/static/description/about1.png" alt=""
+                                                     class="card-img-top img img-fluid o_we_custom_image"
+                                                     data-original-id="1024"
+                                                     data-original-src="/school_figma/static/description/about1.png"
+                                                     data-mimetype="image/png" data-resize-width="405"
+                                                     data-bs-original-title="" title="" aria-describedby="tooltip162211"
+                                                     style="width: 100% !important;" loading="lazy"/>
+                                                <div class="card-body">
+                                                    <h4>Our Vision</h4>
+                                                    <p class="card-text">Note that the tours are booked well in advance
+                                                        and
+                                                        only a certain number
+                                                        of parents can be accommodated on each tour on first come first
+                                                        serve
+                                                        basis. Also it should be noted that the tour does not guarantee
+                                                        that
+                                                        the
+                                                        child will be accepted in the school as this depends on the
+                                                        availability and also the eligibility of the child.
+                                                        <br/>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_col_no_bgcolor pb16 pt24 col-lg-4">
+                                            <div class="card text-bg-white h-100 border"
+                                                 style="border-width: 0px !important;">
+                                                <img src="/school_figma/static/description/about2.png" alt=""
+                                                     class="card-img-top img img-fluid o_we_custom_image"
+                                                     data-original-id="1025"
+                                                     data-original-src="/school_figma/static/description/about2.png"
+                                                     data-mimetype="image/png" data-resize-width="402"
+                                                     style="width: 100% !important;" data-bs-original-title="" title=""
+                                                     aria-describedby="tooltip840890" loading="lazy"/>
+                                                <div class="card-body">
+                                                    <h4>Our Mission</h4>
+                                                    <p class="card-text">Accepts applications from prospective parents
+                                                        throughout the year and
+                                                        those interested are encouraged to contact the school by way of
+                                                        telephone or e-mail by using the contact form to get
+                                                        information. In
+                                                        order to gain more insight into our program, parents should
+                                                        attend.
+                                                        <br/>
+                                                        a school tour before applying.
+                                                        <br/>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="s_three_columns o_cc o_cc2 pt32 pb32 o_colored_level" data-vcss="001"
+                                     data-snippet="s_three_columns" data-name="Columns" style="background-image: none;">
+                                <div class="container">
+                                    <div class="row d-flex align-items-stretch">
+                                        <div class="s_col_no_bgcolor pt16 col-lg-4 pb0">
+                                            <div class="card text-bg-white h-100 border"
+                                                 style="border-width: 0px !important;">
+                                                <img src="/school_figma/static/description/about3.png" alt=""
+                                                     class="card-img-top img img-fluid o_we_custom_image"
+                                                     data-original-id="1026"
+                                                     data-original-src="/school_figma/static/description/about3.png"
+                                                     data-mimetype="image/png" data-resize-width="403"
+                                                     data-bs-original-title="" title="" aria-describedby="tooltip229901"
+                                                     style="width: 100% !important;" loading="lazy"/>
+                                                <div class="card-body">
+                                                    <h4>Core Beliefs</h4>
+                                                    <p class="card-text">Note that the tours are booked well in advance
+                                                        and
+                                                        only a certain number
+                                                        of parents can be accommodated on each tour on first come first
+                                                        serve
+                                                        basis. Also it should be noted that the tour does not guarantee
+                                                        that
+                                                        the
+                                                        child will be accepted in the school as this depends on the
+                                                        availability and also the eligibility of the child.
+                                                        <br/>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_col_no_bgcolor pt16 pb16 col-lg-4">
+                                            <div class="card text-bg-white h-100 border"
+                                                 style="border-width: 0px !important;">
+                                                <img src="/school_figma/static/description/about4.png" alt=""
+                                                     class="card-img-top img img-fluid o_we_custom_image"
+                                                     style="width: 100% !important;" data-original-id="1027"
+                                                     data-original-src="/school_figma/static/description/about4.png"
+                                                     data-mimetype="image/png" data-resize-width="398" loading="lazy"/>
+                                                <div class="card-body">
+                                                    <h4>Pupil Care</h4>
+                                                    <p class="card-text o_default_snippet_text">Accepts applications
+                                                        from
+                                                        prospective parents throughout the year and
+                                                        those interested are encouraged to contact the school by way of
+                                                        telephone or e-mail by using the contact form to get
+                                                        information. In
+                                                        order to gain more insight into our program, parents should
+                                                        attend.
+                                                        <br/>
+                                                        a school tour before applying.
+                                                        <br/>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </section>
+
+
+                            <section class="s_table_of_content pt24 pb24 o_colored_level o_cc o_cc1"
+                                     data-snippet="s_table_of_content" data-name="Table of Content"
+                                     style="background-image: none;">
+                                <div class="container">
+                                    <div class="row s_nb_column_fixed">
+                                        <div class="col-lg-3 s_table_of_content_navbar_wrap s_table_of_content_navbar_sticky s_table_of_content_vertical_navbar d-print-none d-none d-lg-block o_not_editable o_cc o_cc1 o_colored_level"
+                                             data-name="Navbar" contenteditable="false">
+                                            <div class="s_table_of_content_navbar list-group o_no_link_popover"
+                                                 style="">
+                                                <a href="#table_of_content_heading_1699681432016_2095"
+                                                   class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0 active">
+                                                    Admission
+                                                </a>
+                                                <a href="#table_of_content_heading_1699681432016_2096"
+                                                   class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0">
+
+
+                                                </a>
+                                                <a href="#table_of_content_heading_1699681432016_2097"
+                                                   class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0">
+                                                    Our Staff
+                                                </a>
+                                                <a href="#table_of_content_heading_1699681432016_2098"
+                                                   class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0">
+
+
+                                                </a>
+                                                <a href="#table_of_content_heading_1699681432016_2099"
+                                                   class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0">
+                                                    Our Values
+                                                </a>
+                                                <a href="#table_of_content_heading_1699681432016_2100"
+                                                   class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0">
+
+
+                                                </a>
+
+                                                <a href="#table_of_content_heading_1699681432016_2101"
+                                                   class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0">
+                                                    Principal’s Message
+                                                </a>
+                                                <a href="#table_of_content_heading_1699681432016_2102"
+                                                   class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0">
+
+
+                                                </a>
+
+                                                <a href="#table_of_content_heading_1699681432016_2103"
+                                                   class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0">
+                                                    School Fees
+                                                </a>
+                                                <a href="#table_of_content_heading_1699681432016_2104"
+                                                   class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0">
+
+
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-9 s_table_of_content_main oe_structure oe_empty o_colored_level bg-white"
+                                             data-name="Content" style="" data-editor-message-default="true"
+                                             data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                            <h1 data-anchor="true" id="table_of_content_heading_1699681432016_2095">
+                                                <font class="bg-400">
+                                                    Admission
+                                                </font>
+                                            </h1>
+                                            <section class="s_media_list pb32 o_colored_level o_cc o_cc2 bg-white pt0"
+                                                     data-vcss="001"
+                                                     data-snippet="s_media_list" data-name="Media List"
+                                                     style="background-image: none;">
+                                                <div class="container">
+                                                    <div class="row s_nb_column_fixed s_col_no_bgcolor">
+
+                                                        <div class="col-lg-12 s_media_list_item pt16 pb16"
+                                                             data-name="Media item">
+                                                            <div class="row s_col_no_resize s_col_no_bgcolor g-0 align-items-center o_cc o_cc1 o_colored_level">
+                                                                <div class="col-lg-4 align-self-stretch s_media_list_img_wrapper">
+                                                                    <img src="/school_figma/static/description/admission1.png"
+                                                                         alt=""
+                                                                         class="s_media_list_img h-100 w-100 img img-fluid o_we_custom_image"
+                                                                         data-original-id="1057"
+                                                                         data-original-src="/school_figma/static/description/admission1.png"
+                                                                         data-mimetype="image/png"
+                                                                         data-resize-width="256"
+                                                                         data-bs-original-title="" title=""
+                                                                         aria-describedby="tooltip491303" loading="lazy"
+                                                                         style=""/>
+                                                                </div>
+                                                                <div class="col-lg-8 s_media_list_body">
+                                                                    <h3>
+                                                                        <font class="text-black">Pupil</font>
+                                                                    </h3>
+                                                                    <p>
+
+
+                                                                    </p>
+                                                                    <p>The homelike quality of our school contributes to
+                                                                        a relaxed,
+                                                                        focused experience for the child. Our indoor
+                                                                        classroom activities are
+                                                                        placed on open shelves for selection as interest
+                                                                        and readiness inspires
+                                                                        the child. Our outdoor environment offers a
+                                                                        beautiful developed
+                                                                        playground with manipulatives, tricycles, pets,
+                                                                        and gardens.
+                                                                    </p>
+                                                                    <h3>
+
+
+                                                                        <br/>
+                                                                    </h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12 s_media_list_item pt16 pb16"
+                                                             data-name="Media item">
+                                                            <div class="row s_col_no_resize s_col_no_bgcolor g-0 align-items-center o_cc o_cc1 o_colored_level">
+                                                                <div class="col-lg-4 align-self-stretch s_media_list_img_wrapper">
+                                                                    <img src="/school_figma/static/description/admission2.png"
+                                                                         alt=""
+                                                                         class="s_media_list_img h-100 w-100 img img-fluid o_we_custom_image"
+                                                                         data-original-id="1058"
+                                                                         data-original-src="/school_figma/static/description/admission2.png"
+                                                                         data-mimetype="image/png"
+                                                                         data-resize-width="343"
+                                                                         loading="lazy" style=""/>
+                                                                </div>
+                                                                <div class="col-lg-8 s_media_list_body">
+                                                                    <h3>
+                                                                        <font class="text-black">School Time Guide
+                                                                        </font>
+                                                                    </h3>
+                                                                    <p>
+
+
+                                                                    </p>
+                                                                    <p>The child has one intuitive aim: self
+                                                                        development. He desperately
+                                                                        wants to develop his resources, his ability to
+                                                                        cope with a strange,
+                                                                        complex world. He wants to do and see and learn
+                                                                        for himself through his
+                                                                        senses and not through the eyes of an adult. He
+                                                                        becomes a full person.
+                                                                        He is educated.”
+                                                                    </p>
+                                                                    <h3 class="o_default_snippet_text">
+
+
+                                                                        <br/>
+                                                                    </h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12 s_media_list_item pt16 pb16"
+                                                             data-name="Media item">
+                                                            <div class="row s_col_no_resize s_col_no_bgcolor g-0 o_cc o_cc1 o_colored_level align-items-center">
+                                                                <div class="col-lg-4 align-self-stretch s_media_list_img_wrapper">
+                                                                    <img src="/school_figma/static/description/admission3.png"
+                                                                         alt=""
+                                                                         class="s_media_list_img h-100 w-100 img img-fluid o_we_custom_image"
+                                                                         data-original-id="1059"
+                                                                         data-original-src="/school_figma/static/description/admission3.png"
+                                                                         data-mimetype="image/png"
+                                                                         data-resize-width="400"
+                                                                         loading="lazy" style=""/>
+                                                                </div>
+                                                                <div class="col-lg-8 s_media_list_body">
+                                                                    <p>
+                                                                        <font class="text-black">Daily menu signs are
+                                                                            posted at the beginning of all meal lines.
+                                                                            Items
+                                                                            offered as a part of lunch are listed within
+                                                                            the grain, protein, milk,
+                                                                            fruit and vegetable spaces on the menu board
+                                                                        </font>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+
+
+                                            <section class="o_colored_level pb0" style="background-image: none;">
+                                                <h1 data-anchor="true" id="table_of_content_heading_1699681432016_2096">
+
+
+                                                </h1>
+                                                <h1 id="table_of_content_heading_1699681432016_2097" data-anchor="true">
+                                                    <font class="bg-400">Our Staff</font>
+                                                </h1>
+                                                <h1 data-anchor="true" id="table_of_content_heading_1699681432016_2098">
+
+
+                                                    <br/>
+                                                </h1>
+                                                <h4 class="o_default_snippet_text">First Grade Teachers</h4>
+                                                <p>
+
+
+                                                </p>
+                                                <p>The homelike quality of our school contributes to a relaxed,
+                                                    focused experience for the child. Our indoor classroom activities
+                                                    are
+                                                    placed on open shelves for selection as interest and readiness
+                                                    inspires
+                                                    the child. Our outdoor environment offers a beautiful developed
+                                                    playground with manipulatives, tricycles, pets, and gardens.
+                                                </p>
+                                                <h4>
+
+
+                                                    <br/>
+                                                </h4>
+                                            </section>
+                                            <section
+                                                    class="s_three_columns pb32 o_colored_level pt0 o_cc o_cc2 bg-white"
+                                                    data-vcss="001" data-snippet="s_three_columns" data-name="Columns"
+                                                    style="background-image: none;">
+                                                <div class="container">
+                                                    <div class="row d-flex align-items-stretch">
+                                                        <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+                                                            <div class="card text-bg-white h-100" style="">
+                                                                <img src="/school_figma/static/description/staff1.png" alt=""
+                                                                     class="card-img-top img img-fluid o_we_custom_image"
+                                                                     data-original-id="1065"
+                                                                     data-original-src="/school_figma/static/description/staff1.png"
+                                                                     data-mimetype="image/png" data-resize-width="261"/>
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">
+                                                                        <a href="https://schooltime.aislinthemes.com/modern/teachers/teacher-1/"
+                                                                           data-bs-original-title="" title="">
+                                                                            <font class="text-black">Deborah David
+                                                                            </font>
+                                                                        </a>
+                                                                    </h5>
+                                                                    <p>
+                                                                        <font style="color: rgb(255, 0, 0);">
+                                                                            Teacher of the first grade
+                                                                        </font>
+                                                                    </p>
+                                                                    <p>
+                                                                        I will be spending some time getting everything
+                                                                        together but
+                                                                        would appreciate any suggestions along.
+                                                                    </p>
+                                                                    <p class="card-title">
+
+
+                                                                        Meet me on
+                                                                        <font style="color: rgb(206, 0, 0);">
+                                                                            <a href="https://schooltime.aislinthemes.com/modern/school-info/our-staff/#"
+                                                                               data-bs-original-title="" title="">
+                                                                                <i class="fa fa-twitter"
+                                                                                   data-bs-original-title=""
+                                                                                   title=""
+                                                                                   aria-describedby="tooltip6704"
+                                                                                   style="color: rgb(255, 0, 0);"/>
+                                                                            </a>
+                                                                            <a href="https://schooltime.aislinthemes.com/modern/school-info/our-staff/#"
+                                                                               data-bs-original-title="" title="">
+                                                                                <i class="fa fa-facebook"
+                                                                                   data-bs-original-title=""
+                                                                                   title=""
+                                                                                   aria-describedby="tooltip434811"
+                                                                                   style="color: rgb(255, 0, 0);"/>
+                                                                            </a>
+                                                                        </font>
+                                                                        <a href="https://schooltime.aislinthemes.com/modern/school-info/our-staff/#"
+                                                                           data-bs-original-title="" title="">
+                                                                            <font style="color: rgb(206, 0, 0);">
+                                                                            </font>
+                                                                            <i class="fa fa-instagram"
+                                                                               data-bs-original-title=""
+                                                                               title="" aria-describedby="tooltip11496"
+                                                                               style="color: rgb(255, 0, 0);"/>
+                                                                        </a>
+                                                                        <br/>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+                                                            <div class="card text-bg-white h-100">
+                                                                <img src="/school_figma/static/description/staff2.png" alt=""
+                                                                     class="card-img-top img img-fluid o_we_custom_image"
+                                                                     data-original-id="1066"
+                                                                     data-original-src="/school_figma/static/description/staff2.png"
+                                                                     data-mimetype="image/png" data-resize-width="259"/>
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">
+                                                                        <a href="https://schooltime.aislinthemes.com/modern/teachers/carol-a-swainson/"
+                                                                           data-bs-original-title="" title="">
+                                                                            <font style="" class="text-black">Carol A.
+                                                                                Swainson
+                                                                            </font>
+                                                                        </a>
+                                                                    </h5>
+                                                                    <p>
+                                                                    </p>
+                                                                    <h6>
+                                                                        <font style="color: rgb(255, 0, 0);">Teacher of
+                                                                            the first
+                                                                            grade
+                                                                        </font>
+                                                                    </h6>
+                                                                    <p>
+
+                                                                    </p>
+                                                                    <p>I will be spending some time getting everything
+                                                                        together but
+                                                                        would appreciate any suggestions along.
+                                                                    </p>
+                                                                    <p class="card-title">
+
+
+                                                                        Meet me on
+                                                                        <a href="https://schooltime.aislinthemes.com/modern/school-info/our-staff/#"
+                                                                           data-bs-original-title="" title="">
+                                                                            <i class="fa fa-twitter"
+                                                                               data-bs-original-title="" title=""
+                                                                               aria-describedby="tooltip983225"
+                                                                               style="color: rgb(255, 0, 0);"/>
+                                                                        </a>
+                                                                        <a href="https://schooltime.aislinthemes.com/modern/school-info/our-staff/#"
+                                                                           data-bs-original-title="" title="">
+                                                                            <i class="fa fa-facebook"
+                                                                               data-bs-original-title="" title=""
+                                                                               aria-describedby="tooltip971965"
+                                                                               style="color: rgb(255, 0, 0);"/>
+                                                                        </a>
+                                                                        <a href="https://schooltime.aislinthemes.com/modern/school-info/our-staff/#"
+                                                                           data-bs-original-title="" title="">
+                                                                            <i class="fa fa-instagram"
+                                                                               data-bs-original-title=""
+                                                                               title="" aria-describedby="tooltip317253"
+                                                                               style="color: rgb(255, 0, 0);"/>
+                                                                        </a>
+                                                                        <br/>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+                                                            <div class="card text-bg-white h-100">
+                                                                <img src="/school_figma/static/description/staff3.png" alt=""
+                                                                     class="card-img-top img img-fluid o_we_custom_image"
+                                                                     data-original-id="1067"
+                                                                     data-original-src="/school_figma/static/description/staff3.png"
+                                                                     data-mimetype="image/png" data-resize-width="256"/>
+                                                                <div class="card-body">
+                                                                    <h3 class="card-title o_default_snippet_text">
+                                                                    </h3>
+                                                                    <h5>
+                                                                        <a href="https://schooltime.aislinthemes.com/modern/teachers/chris-cook/"
+                                                                           data-bs-original-title="" title="">
+                                                                            <font class="text-black">Chris Cook</font>
+                                                                        </a>
+                                                                    </h5>
+                                                                    <p>
+                                                                    </p>
+                                                                    <h6>
+                                                                        <font style="color: rgb(255, 0, 0);">Teacher of
+                                                                            the first
+                                                                            grade
+                                                                        </font>
+                                                                    </h6>
+                                                                    <p>
+                                                                    </p>
+                                                                    <p>I will be spending some time getting everything
+                                                                        together but
+                                                                        would appreciate any suggestions along…
+                                                                    </p>
+                                                                    <p class="card-title">
+
+
+                                                                        Meet me on
+                                                                        <a href="https://schooltime.aislinthemes.com/modern/school-info/our-staff/#"
+                                                                           data-bs-original-title="" title="">
+                                                                            <i class="fa fa-twitter"
+                                                                               data-bs-original-title="" title=""
+                                                                               aria-describedby="tooltip442617"
+                                                                               style="color: rgb(255, 0, 0);"/>
+                                                                        </a>
+                                                                        <a href="https://schooltime.aislinthemes.com/modern/school-info/our-staff/#"
+                                                                           data-bs-original-title="" title="">
+                                                                            <i class="fa fa-facebook"
+                                                                               data-bs-original-title="" title=""
+                                                                               aria-describedby="tooltip29659"
+                                                                               style="color: rgb(255, 0, 0);"/>
+                                                                        </a>
+                                                                        <a href="https://schooltime.aislinthemes.com/modern/school-info/our-staff/#"
+                                                                           data-bs-original-title="" title="">
+                                                                            <i class="fa fa-instagram"
+                                                                               data-bs-original-title=""
+                                                                               title="" aria-describedby="tooltip934051"
+                                                                               style="color: rgb(255, 0, 0);"/>
+                                                                        </a>
+
+                                                                        <br/>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+
+
+                                            <h4 class="o_default_snippet_text">Pre School Teachers</h4>
+                                            <p>
+
+
+                                            </p>
+                                            <p>The homelike quality of our school contributes to a relaxed,
+                                                focused experience for the child. Our indoor classroom activities
+                                                are
+                                                placed on open shelves for selection as interest and readiness
+                                                inspires
+                                                the child. Our outdoor environment offers a beautiful developed
+                                                playground with manipulatives, tricycles, pets, and gardens.
+                                            </p>
+                                            <h4>
+
+
+                                                <br/>
+                                            </h4>
+                                            <!--                                            </section>-->
+                                            <section
+                                                    class="s_three_columns pb32 o_colored_level pt0 o_cc o_cc2 bg-white"
+                                                    data-vcss="001" data-snippet="s_three_columns" data-name="Columns"
+                                                    style="background-image: none;">
+                                                <div class="container">
+                                                    <div class="row d-flex align-items-stretch">
+                                                        <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+                                                            <div class="card text-bg-white h-100" style="">
+                                                                <img src="/school_figma/static/description/staff1.png" alt=""
+                                                                     class="card-img-top img img-fluid o_we_custom_image"
+                                                                     data-original-id="1065"
+                                                                     data-original-src="/school_figma/static/description/staff1.png"
+                                                                     data-mimetype="image/png" data-resize-width="261"/>
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">
+                                                                        <a href="https://schooltime.aislinthemes.com/modern/teachers/teacher-1/"
+                                                                           data-bs-original-title="" title="">
+                                                                            <font class="text-black">Deborah David
+                                                                            </font>
+                                                                        </a>
+                                                                    </h5>
+                                                                    <p>
+                                                                        <font style="color: rgb(255, 0, 0);">
+                                                                            Teacher of the first grade
+                                                                        </font>
+                                                                    </p>
+                                                                    <p>
+                                                                        I will be spending some time getting everything
+                                                                        together but
+                                                                        would appreciate any suggestions along.
+                                                                    </p>
+                                                                    <p class="card-title">
+
+
+                                                                        Meet me on
+                                                                        <font style="color: rgb(206, 0, 0);">
+                                                                            <a href="https://schooltime.aislinthemes.com/modern/school-info/our-staff/#"
+                                                                               data-bs-original-title="" title="">
+                                                                                <i class="fa fa-twitter"
+                                                                                   data-bs-original-title=""
+                                                                                   title=""
+                                                                                   aria-describedby="tooltip6704"
+                                                                                   style="color: rgb(255, 0, 0);"/>
+                                                                            </a>
+                                                                            <a href="https://schooltime.aislinthemes.com/modern/school-info/our-staff/#"
+                                                                               data-bs-original-title="" title="">
+                                                                                <i class="fa fa-facebook"
+                                                                                   data-bs-original-title=""
+                                                                                   title=""
+                                                                                   aria-describedby="tooltip434811"
+                                                                                   style="color: rgb(255, 0, 0);"/>
+                                                                            </a>
+                                                                        </font>
+                                                                        <a href="https://schooltime.aislinthemes.com/modern/school-info/our-staff/#"
+                                                                           data-bs-original-title="" title="">
+                                                                            <font style="color: rgb(206, 0, 0);">
+                                                                            </font>
+                                                                            <i class="fa fa-instagram"
+                                                                               data-bs-original-title=""
+                                                                               title="" aria-describedby="tooltip11496"
+                                                                               style="color: rgb(255, 0, 0);"/>
+                                                                        </a>
+                                                                        <br/>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+                                                            <div class="card text-bg-white h-100">
+                                                                <img src="/school_figma/static/description/staff2.png" alt=""
+                                                                     class="card-img-top img img-fluid o_we_custom_image"
+                                                                     data-original-id="1066"
+                                                                     data-original-src="/school_figma/static/description/staff2.png"
+                                                                     data-mimetype="image/png" data-resize-width="259"/>
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">
+                                                                        <a href="https://schooltime.aislinthemes.com/modern/teachers/carol-a-swainson/"
+                                                                           data-bs-original-title="" title="">
+                                                                            <font style="" class="text-black">Carol A.
+                                                                                Swainson
+                                                                            </font>
+                                                                        </a>
+                                                                    </h5>
+                                                                    <p>
+                                                                    </p>
+                                                                    <h6>
+                                                                        <font style="color: rgb(255, 0, 0);">Teacher of
+                                                                            the first
+                                                                            grade
+                                                                        </font>
+                                                                    </h6>
+                                                                    <p>
+
+                                                                    </p>
+                                                                    <p>I will be spending some time getting everything
+                                                                        together but
+                                                                        would appreciate any suggestions along.
+                                                                    </p>
+                                                                    <p class="card-title">
+
+
+                                                                        Meet me on
+                                                                        <a href="https://schooltime.aislinthemes.com/modern/school-info/our-staff/#"
+                                                                           data-bs-original-title="" title="">
+                                                                            <i class="fa fa-twitter"
+                                                                               data-bs-original-title="" title=""
+                                                                               aria-describedby="tooltip983225"
+                                                                               style="color: rgb(255, 0, 0);"/>
+                                                                        </a>
+                                                                        <a href="https://schooltime.aislinthemes.com/modern/school-info/our-staff/#"
+                                                                           data-bs-original-title="" title="">
+                                                                            <i class="fa fa-facebook"
+                                                                               data-bs-original-title="" title=""
+                                                                               aria-describedby="tooltip971965"
+                                                                               style="color: rgb(255, 0, 0);"/>
+                                                                        </a>
+                                                                        <a href="https://schooltime.aislinthemes.com/modern/school-info/our-staff/#"
+                                                                           data-bs-original-title="" title="">
+                                                                            <i class="fa fa-instagram"
+                                                                               data-bs-original-title=""
+                                                                               title="" aria-describedby="tooltip317253"
+                                                                               style="color: rgb(255, 0, 0);"/>
+                                                                        </a>
+                                                                        <br/>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+                                                            <div class="card text-bg-white h-100">
+                                                                <img src="/school_figma/static/description/staff3.png" alt=""
+                                                                     class="card-img-top img img-fluid o_we_custom_image"
+                                                                     data-original-id="1067"
+                                                                     data-original-src="/school_figma/static/description/staff3.png"
+                                                                     data-mimetype="image/png" data-resize-width="256"/>
+                                                                <div class="card-body">
+                                                                    <h3 class="card-title o_default_snippet_text">
+                                                                    </h3>
+                                                                    <h5>
+                                                                        <a href="https://schooltime.aislinthemes.com/modern/teachers/chris-cook/"
+                                                                           data-bs-original-title="" title="">
+                                                                            <font class="text-black">Chris Cook</font>
+                                                                        </a>
+                                                                    </h5>
+                                                                    <p>
+                                                                    </p>
+                                                                    <h6>
+                                                                        <font style="color: rgb(255, 0, 0);">Teacher of
+                                                                            the first
+                                                                            grade
+                                                                        </font>
+                                                                    </h6>
+                                                                    <p>
+                                                                    </p>
+                                                                    <p>I will be spending some time getting everything
+                                                                        together but
+                                                                        would appreciate any suggestions along…
+                                                                    </p>
+                                                                    <p class="card-title">
+
+
+                                                                        Meet me on
+                                                                        <a href="https://schooltime.aislinthemes.com/modern/school-info/our-staff/#"
+                                                                           data-bs-original-title="" title="">
+                                                                            <i class="fa fa-twitter"
+                                                                               data-bs-original-title="" title=""
+                                                                               aria-describedby="tooltip442617"
+                                                                               style="color: rgb(255, 0, 0);"/>
+                                                                        </a>
+                                                                        <a href="https://schooltime.aislinthemes.com/modern/school-info/our-staff/#"
+                                                                           data-bs-original-title="" title="">
+                                                                            <i class="fa fa-facebook"
+                                                                               data-bs-original-title="" title=""
+                                                                               aria-describedby="tooltip29659"
+                                                                               style="color: rgb(255, 0, 0);"/>
+                                                                        </a>
+                                                                        <a href="https://schooltime.aislinthemes.com/modern/school-info/our-staff/#"
+                                                                           data-bs-original-title="" title="">
+                                                                            <i class="fa fa-instagram"
+                                                                               data-bs-original-title=""
+                                                                               title="" aria-describedby="tooltip934051"
+                                                                               style="color: rgb(255, 0, 0);"/>
+                                                                        </a>
+
+                                                                        <br/>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+
+
+                                            <section class="o_colored_level pb0" style="background-image: none;">
+                                                <h1 data-anchor="true" id="table_of_content_heading_1699681432016_2098">
+
+
+                                                </h1>
+                                                <h1 id="table_of_content_heading_1699681432016_2099" data-anchor="true">
+                                                    <font class="bg-400">
+                                                        Our Values
+                                                    </font>
+                                                </h1>
+                                                <h1 data-anchor="true" id="table_of_content_heading_1699681432016_2100">
+
+
+                                                    <br/>
+                                                </h1>
+                                            </section>
+                                            <section class="s_three_columns o_cc o_cc2 o_colored_level pb0 pt0"
+                                                     data-vcss="001" data-snippet="s_three_columns" data-name="Columns"
+                                                     style="background-image: none;">
+                                                <div class="container">
+                                                    <div class="row d-flex align-items-stretch">
+                                                        <div class="s_col_no_bgcolor col-lg-6 pt0 pb0">
+                                                            <div class="card text-bg-white h-100 border"
+                                                                 style="border-width: 0px !important;">
+                                                                <img src="/school_figma/static/description/admission3.png"
+                                                                     alt=""
+                                                                     class="card-img-top img img-fluid o_we_custom_image mx-auto d-block"
+                                                                     data-original-id="1059"
+                                                                     data-original-src="/school_figma/static/description/admission3.png"
+                                                                     data-mimetype="image/png" data-resize-width="400"
+                                                                     style="" loading="lazy"/>
+                                                                <div class="card-body">
+                                                                    <h4 class="card-title">
+                                                                        <font class="text-black">Our Vision</font>
+                                                                    </h4>
+                                                                    <p>
+
+
+                                                                    </p>
+                                                                    <p>Note that the tours are booked well in advance
+                                                                        and only a certain
+                                                                        number of parents can be accommodated on each
+                                                                        tour on first come first
+                                                                        serve basis. Also it should be noted that the
+                                                                        tour does not guarantee
+                                                                        that the child will be accepted in the school as
+                                                                        this depends on the
+                                                                        availability and also the eligibility of the
+                                                                        child.
+                                                                    </p>
+                                                                    <h3 class="card-title o_default_snippet_text">
+
+
+                                                                        <br/>
+                                                                    </h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="s_col_no_bgcolor col-lg-6 pb0 pt0">
+                                                            <div class="card text-bg-white h-100 border"
+                                                                 style="border-width: 0px !important;">
+                                                                <img src="/school_figma/static/description/about2.png" alt=""
+                                                                     class="card-img-top img img-fluid o_we_custom_image mx-auto d-block"
+                                                                     data-original-id="1025"
+                                                                     data-original-src="/school_figma/static/description/about2.png"
+                                                                     data-mimetype="image/png" data-resize-width="402"
+                                                                     data-bs-original-title="" title=""
+                                                                     aria-describedby="tooltip126238" style=""
+                                                                     loading="lazy"/>
+                                                                <div class="card-body">
+                                                                    <h4 class="card-title">
+                                                                        <font class="text-black">Our Mission</font>
+                                                                    </h4>
+                                                                    <p>
+
+
+                                                                    </p>
+                                                                    <p>Accepts applications from prospective parents
+                                                                        throughout the year
+                                                                        and those interested are encouraged to contact
+                                                                        the school by way of
+                                                                        telephone or e-mail by using the contact form to
+                                                                        get information. In
+                                                                        order to gain more insight into our program,
+                                                                        parents should attend.
+                                                                        <br/>
+                                                                        a school tour before applying.
+                                                                    </p>
+                                                                    <h3 class="card-title o_default_snippet_text">
+
+
+                                                                        <br/>
+                                                                    </h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <section class="s_three_columns o_colored_level o_cc o_cc2 bg-white pt0 pb0"
+                                                     data-vcss="001" data-snippet="s_three_columns" data-name="Columns"
+                                                     style="">
+                                                <div class="container">
+                                                    <div class="row d-flex align-items-stretch">
+                                                        <div class="s_col_no_bgcolor col-lg-6 pt0 pb0">
+                                                            <div class="card text-bg-white h-100 border"
+                                                                 style="border-width: 0px !important;">
+                                                                <img src="/school_figma/static/description/about3.png" alt=""
+                                                                     class="card-img-top img img-fluid o_we_custom_image mx-auto d-block"
+                                                                     data-original-id="1026"
+                                                                     data-original-src="/school_figma/static/description/about3.png"
+                                                                     data-mimetype="image/png" data-resize-width="403"
+                                                                     style="" data-bs-original-title="" title=""
+                                                                     aria-describedby="tooltip245152" loading="lazy"/>
+                                                                <div class="card-body">
+                                                                    <h3 class="card-title">
+                                                                        <font class="text-black">Core Beliefs</font>
+                                                                    </h3>
+                                                                    <p>
+
+
+                                                                    </p>
+                                                                    <p>Note that the tours are booked well in advance
+                                                                        and only a certain
+                                                                        number of parents can be accommodated on each
+                                                                        tour on first come first
+                                                                        serve basis. Also it should be noted that the
+                                                                        tour does not guarantee
+                                                                        that the child will be accepted in the school as
+                                                                        this depends on the
+                                                                        availability and also the eligibility of the
+                                                                        child.
+                                                                    </p>
+                                                                    <h3 class="card-title o_default_snippet_text">
+
+
+                                                                        <br/>
+                                                                    </h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="s_col_no_bgcolor col-lg-6 pt0 pb0">
+                                                            <div class="card text-bg-white h-100 border"
+                                                                 style="border-width: 0px !important;">
+                                                                <img src="/school_figma/static/description/about4.png" alt=""
+                                                                     class="card-img-top img img-fluid o_we_custom_image mx-auto d-block"
+                                                                     data-original-id="1027"
+                                                                     data-original-src="/school_figma/static/description/about4.png"
+                                                                     data-mimetype="image/png" data-resize-width="398"
+                                                                     data-bs-original-title="" title=""
+                                                                     aria-describedby="tooltip59623" loading="lazy"
+                                                                     style=""/>
+                                                                <div class="card-body">
+                                                                    <h3 class="card-title">
+                                                                        <font class="text-black">Pupil Care</font>
+                                                                    </h3>
+                                                                    <p>
+
+
+                                                                    </p>
+                                                                    <p>Accepts applications from prospective parents
+                                                                        throughout the year
+                                                                        and those interested are encouraged to contact
+                                                                        the school by way of
+                                                                        telephone or e-mail by using the contact form to
+                                                                        get information. In
+                                                                        order to gain more insight into our program,
+                                                                        parents should attend.
+                                                                        <br/>
+                                                                        a school tour before applying.
+                                                                    </p>
+                                                                    <h3 class="card-title">
+
+
+                                                                        <br/>
+                                                                    </h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </section>
+
+                                            <section class="o_colored_level pb0" style="background-image: none;">
+                                                <h1 data-anchor="true" id="table_of_content_heading_1699681432016_2100">
+
+
+                                                </h1>
+                                                <h1 id="table_of_content_heading_1699681432016_2101" data-anchor="true">
+                                                    <font class="bg-400">
+                                                        Principal’s Message
+                                                    </font>
+                                                </h1>
+                                                <div class="s_text_highlight o_colored_level my-3 w-100 o_cc o_cc3 text-center"
+                                                     data-snippet="s_text_highlight" data-name="Text Highlight"
+                                                     style="background-color: rgb(224, 220, 220);">
+                                                    <div class="container">
+                                                        <p style="text-align: left;">
+                                                            <font class="text-black">Each tour gives a small group of
+                                                                visitors an opportunity to observe
+                                                                students and teachers in our classrooms, teachers in our
+                                                                classrooms.
+                                                            </font>
+                                                            <br/>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <h1 data-anchor="true" id="table_of_content_heading_1699681432016_2102">
+
+
+                                                    <br/>
+                                                </h1>
+                                            </section>
+
+                                            <section class="s_text_block o_colored_level pt0 pb0"
+                                                     data-snippet="s_text_block" data-name="Text"
+                                                     style="background-image: none;">
+                                                <div class="container s_allow_columns">
+                                                    <p>A school tour before applying. School tours for parents are held
+                                                        weekly
+                                                        in the fall and winter during the regular school day.&amp;nbsp;A
+                                                        school tour
+                                                        before applying. School tours for parents are held weekly in the
+                                                        fall
+                                                        and winter during the regular school day.&amp;nbsp;A school tour
+                                                        before applying.
+                                                        School tours for parents are held weekly in the fall and winter
+                                                        during
+                                                        the regular school day.
+                                                        <br/>
+                                                    </p>
+                                                </div>
+                                            </section>
+
+                                            <div class="s_text_highlight o_colored_level my-3 w-100 o_cc o_cc3 text-center"
+                                                 data-snippet="s_text_highlight" data-name="Text Highlight"
+                                                 style="background-color: rgb(224, 220, 220);">
+                                                <div class="container">
+                                                    <p style="text-align: left;">
+                                                        <font class="text-black">Education is commonly and formally
+                                                            divided into stages such as preschool, primary school,
+                                                            secondary school and then college, university or
+                                                            apprenticeship. The methodology of teaching is called
+                                                            pedagogy.
+                                                        </font>
+                                                        <br/>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <section class="s_text_block o_colored_level pt0 pb0"
+                                                     data-snippet="s_text_block" data-name="Text"
+                                                     style="background-image: none;">
+                                                <div class="container s_allow_columns">
+                                                    <p>A school tour before applying. School tours for parents are held
+                                                        weekly in the fall and winter during the regular school day.
+                                                        Each tour gives a small group of visitors an opportunity to
+                                                        observe students and teachers in our classrooms. Accepts
+                                                        applications from prospective parents throughout the year and
+                                                        those interested are encouraged to contact the school by way of
+                                                        telephone (310)838-4044, or e-mail by using the contact form to
+                                                        get information. In order to gain more insight into our program,
+                                                        parents should attend. A school tour before applying. School
+                                                        tours for parents are held weekly in the fall and winter during
+                                                        the regular school day. Each tour gives a small group of
+                                                        visitors an opportunity to observe students and teachers in our
+                                                        classrooms.
+                                                        <br/>
+                                                    </p>
+                                                </div>
+                                            </section>
+
+
+                                            <section class="o_colored_level pb0" style="background-image: none;">
+                                                <h1 data-anchor="true" id="table_of_content_heading_1699681432016_2102">
+
+
+                                                </h1>
+                                                <h1 id="table_of_content_heading_1699681432016_2103" data-anchor="true">
+                                                    <font class="bg-400">
+                                                        School Fees
+                                                    </font>
+                                                </h1>
+                                                <h1 data-anchor="true" id="table_of_content_heading_1699681432016_2104">
+
+
+                                                    <br/>
+                                                </h1>
+                                            </section>
+                                            <section class="s_text_block o_colored_level pt0 pb64"
+                                                     data-snippet="s_text_block" data-name="Text"
+                                                     style="background-image: none;">
+                                                <div class="container s_allow_columns">
+                                                    <p>The homelike quality of our school contributes to a relaxed,
+                                                        focused experience for the child. Our indoor classroom
+                                                        activities are placed on open shelves for selection as interest
+                                                        and readiness inspires the child. Our outdoor environment offers
+                                                        a beautiful developed playground with manipulatives, tricycles,
+                                                        pets, and gardens.
+                                                        <br/>
+                                                    </p>
+                                                </div>
+                                            </section>
+                                            <section class="s_three_columns o_cc o_cc2 o_colored_level pb0 pt0"
+                                                     data-vcss="001" data-snippet="s_three_columns" data-name="Columns"
+                                                     style="background-image: none;">
+                                                <div class="container">
+                                                    <div class="row d-flex align-items-stretch">
+                                                        <div class="s_col_no_bgcolor col-lg-6 pt0 pb0">
+                                                            <div class="card text-bg-white h-100 border"
+                                                                 style="border-width: 0px !important;">
+                                                                <img src="/school_figma/static/description/admission3.png"
+                                                                     alt=""
+                                                                     class="card-img-top img img-fluid o_we_custom_image mx-auto d-block"
+                                                                     data-original-id="1059"
+                                                                     data-original-src="/school_figma/static/description/admission3.png"
+                                                                     data-mimetype="image/png" data-resize-width="400"
+                                                                     style="" loading="lazy"/>
+                                                                <div class="card-body">
+                                                                    <h4 class="card-title">
+                                                                        <font class="text-black">Primary School</font>
+                                                                    </h4>
+                                                                    <p>
+
+
+                                                                    </p>
+                                                                    <p>Movum elementum pulvinar detos morbi a dosis
+                                                                        retrum
+                                                                        gravida.&amp;nbsp;
+                                                                    </p>
+                                                                    <ul>
+                                                                        <li><b/>8am - 12 Noon Care&amp;nbsp;
+                                                                        </li>
+                                                                        <li>3 Meals a Day
+                                                                            a
+                                                                        </li>
+                                                                        <li>2 Educators</li>
+                                                                        <li>Arts Classes&amp;nbsp;</li>
+                                                                        <li>Arts Classes
+                                                                        </li>
+                                                                    </ul>
+                                                                    <div class="col-lg-5 pt8 o_colored_level">
+                                                                        <p style="text-align: left;">
+                                                                            <a class="mb-2 btn btn-custom text-o-color-3 flat btn-lg"
+                                                                               href="/contactus"
+                                                                               data-bs-original-title="" title=""
+                                                                               style="border-width: 1px; border-style: solid; background-color: rgb(206, 0, 0);"
+                                                                               aria-describedby="popover670480">
+                                                                                <strong>
+                                                                                    <span style="font-size: 16px;">
+                                                                                        Choose a plan
+                                                                                    </span>
+                                                                                </strong>
+                                                                            </a>
+                                                                            <br/>
+                                                                        </p>
+                                                                    </div>
+                                                                    <p>
+                                                                        <br/>
+                                                                    </p>
+                                                                    <h3 class="card-title o_default_snippet_text">
+
+
+                                                                        <br/>
+                                                                    </h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="s_col_no_bgcolor col-lg-6 pb0 pt0">
+                                                            <div class="card text-bg-white h-100 border"
+                                                                 style="border-width: 0px !important;">
+                                                                <img src="/school_figma/static/description/about2.png" alt=""
+                                                                     class="card-img-top img img-fluid o_we_custom_image mx-auto d-block"
+                                                                     data-original-id="1025"
+                                                                     data-original-src="/school_figma/static/description/about2.png"
+                                                                     data-mimetype="image/png" data-resize-width="402"
+                                                                     data-bs-original-title="" title=""
+                                                                     aria-describedby="tooltip126238" style=""
+                                                                     loading="lazy"/>
+                                                                <div class="card-body">
+                                                                    <h4 class="card-title">
+                                                                        <font class="text-black">Middle School</font>
+                                                                    </h4>
+                                                                    <p>
+
+
+                                                                    </p>
+                                                                    <p>Movum elementum pulvinar detos morbi a dosis
+                                                                        retrum
+                                                                    </p>
+                                                                    <ul>
+                                                                        <li>8am - 12 Noon Care&amp;nbsp;</li>
+                                                                        <li>3 Meals a Day
+                                                                            a
+                                                                        </li>
+                                                                        <li>2 Educators</li>
+                                                                        <li>Arts Classes&amp;nbsp;</li>
+                                                                        <li>Technics Classes
+                                                                        </li>
+                                                                    </ul>
+                                                                    <div class="col-lg-5 pt8 o_colored_level">
+                                                                        <p style="text-align: left;">
+                                                                            <a class="mb-2 btn btn-custom text-o-color-3 flat btn-lg"
+                                                                               href="/contactus"
+                                                                               data-bs-original-title="" title=""
+                                                                               style="border-width: 1px; border-style: solid; background-color: rgb(206, 0, 0);"
+                                                                               aria-describedby="popover670480">
+                                                                                <strong>
+                                                                                    <span style="font-size: 16px;">
+                                                                                        Choose a plan
+                                                                                    </span>
+                                                                                </strong>
+                                                                            </a>
+                                                                            <br/>
+                                                                        </p>
+                                                                    </div>
+                                                                    <p>
+                                                                        <br/>
+                                                                    </p>
+                                                                    <h3 class="card-title o_default_snippet_text">
+
+
+                                                                        <br/>
+                                                                    </h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                        </div>
+
+                    </t>
+                </t>
+            </field>
+        </record>
+
+    </data>
+</odoo>

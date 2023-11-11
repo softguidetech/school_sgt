@@ -24,6 +24,8 @@
         'views/header.xml',
         'views/footer.xml',
         'views/home.xml',
+        'views/contactus.xml',
+        'views/aboutus.xml',
     ],
     'application': False,
     'auto_install': False,
