@@ -140,7 +140,7 @@ class SchoolTeacher(models.Model):
             self.stu_parent_id.write({"student_id": vals.get("student_id")})
         if not vals.get("is_parent"):
             user_rec = self.employee_id.user_id
-            parent_grp_id = self.env.ref("School Management SGT.group_school_parent")
+            parent_grp_id = self.env.ref("school_mngment_sgt.group_school_parent")
             if parent_grp_id in user_rec.groups_id:
                 user_rec.write({"groups_id": [(3, parent_grp_id.id)]})
         return super(SchoolTeacher, self).write(vals)
