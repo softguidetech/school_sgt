@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_res_company_form_inherit" model="ir.ui.view">
+            <field name="name">res.company.form.inherit</field>
+            <field name="model">res.company</field>
+            <field name="inherit_id" ref="base.view_company_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook/page[@name='general_info']" position="after">
+                    <page string=" Our Values " name="our_values">
+                        <group>
+                            <group>
+                                <group>
+                                    <field name="vision_message"/>
+                                    <field name="vision_photo"/>
+                                </group>
+                                <group>
+                                    <field name="mission_message"/>
+                                    <field name="mission_photo"/>
+                                </group>
+                            </group>
+                            <group>
+                                <group>
+                                    <field name="core_beliefs_message"/>
+                                    <field name="core_beliefs_photo"/>
+                                </group>
+                                <group>
+                                    <field name="pupil_care_message"/>
+                                    <field name="pupil_care_photo"/>
+                                </group>
+                            </group>
+                        </group>
+                    </page>
+                    <page string="Principal’s Message" name="principals_msg">
+                        <group>
+                            <group>
+                                <field name="principal_trip_message"/>
+                                <field name="principal_education_message"/>
+                            </group>
+                        </group>
+                    </page>
+                    <page string=" School Fees " name="school_fees ">
+                        <group>
+                            <group>
+                                <field name="fees_message"/>
+                                <field name="primary_school_description"/>
+                                <field name="middle_school_description"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

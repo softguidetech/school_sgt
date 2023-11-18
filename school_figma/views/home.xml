@@ -210,6 +210,90 @@
                         </div>
                     </section>
 
+
+                    <section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text"
+                             style="background-image: none;">
+                        <div class="s_allow_columns container">
+                            <div class="row">
+                                <!-- Column 1 -->
+                                <div class="o_colored_level col-lg-4" style="background-color: rgb(75, 7, 90);">
+                                    <h4>
+                                        <strong>
+                                            <font class="text-o-color-4">Learn The Latest Skills</font>
+                                        </strong>
+                                    </h4>
+                                    <div class="row">
+                                        <div class="o_colored_level pt0 col-lg-3">
+                                            <img src="replace_with_image_url_1" alt=""
+                                                 class="img-fluid rounded-circle img o_we_custom_image"
+                                                 style="width: 100% !important;"/>
+                                        </div>
+                                        <div class="col-lg-6 o_colored_level pt0">
+                                            <p style="color: white;">
+                                                <strong>
+                                                    <font class="text-o-color-4"></font>
+                                                </strong>
+                                                Contrary to popular belief, Lorem Ipsum is not simply random text. It
+                                                has roots in a BC, making it over 2000 years old.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Column 2 -->
+                                <div class="o_colored_level col-lg-4" style="background-color: rgb(75, 7, 90);">
+                                    <h4>
+                                        <strong>
+                                            <font class="text-o-color-4">Get Ready For a Career</font>
+                                        </strong>
+                                    </h4>
+                                    <div class="row">
+                                        <div class="o_colored_level col-lg-3">
+                                            <img src="replace_with_image_url_2" alt=""
+                                                 class="img-fluid rounded-circle img o_we_custom_image"
+                                                 style="width: 100% !important;"/>
+                                        </div>
+                                        <div class="col-lg-6 o_colored_level pt16">
+                                            <p style="color: white;">
+                                                <strong>
+                                                    <font class="text-o-color-4">Contrary to popular belief, Lorem Ipsum
+                                                        is not simply random text. It has roots in a BC, making it over
+                                                        2000 years old.
+                                                    </font>
+                                                </strong>
+                                                .
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Column 3 -->
+                                <div class="o_colored_level col-lg-4" style="background-color: rgb(75, 7, 90);">
+                                    <h4>
+                                        <strong>
+                                            <font class="text-o-color-3">Earn a Certificate</font>
+                                        </strong>
+                                    </h4>
+                                    <div class="row">
+                                        <div class="o_colored_level offset-lg-1 pt0 col-lg-3">
+                                            <img src="replace_with_image_url_3" alt=""
+                                                 class="img-fluid rounded-circle img o_we_custom_image"
+                                                 style="width: 100% !important;"/>
+                                        </div>
+                                        <div class="col-lg-6 o_colored_level">
+                                            <p style="color: white;">
+                                                &amp;nbsp;Contrary to popular belief, Lorem Ipsum is not simply random
+                                                text. It has roots in a BC, making it over 2000 years old.
+                                                <br/>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
                     <section class="s_text_block o_colored_level pb0 pt32" data-snippet="s_text_block" data-name="Text"
                              style="background-image: none;">
                         <div class="s_allow_columns container">
@@ -253,211 +337,294 @@
                         </div>
                     </section>
 
+                    <!--                    <section class="s_three_columns o_cc o_cc2 pt32 pb32 o_colored_level" data-vcss="001"-->
+                    <!--                             data-snippet="s_three_columns" data-name="Columns" style="background-image: none;">-->
+                    <!--                        <div class="container">-->
+                    <!--                            <div class="row d-flex align-items-stretch">-->
+                    <!--                                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">-->
+                    <!--                                    <div class="card text-bg-white h-100">-->
+                    <!--                                        <img src="/school_figma/static/description/des1.png" alt=""-->
+                    <!--                                             class="card-img-top img img-fluid o_we_custom_image" data-original-id="958"-->
+                    <!--                                             data-original-src="/school_figma/static/description/des1.png"-->
+                    <!--                                             data-mimetype="image/png" data-resize-width="446" data-bs-original-title=""-->
+                    <!--                                             title="" aria-describedby="tooltip517" loading="lazy" style=""/>-->
+                    <!--                                        <div class="card-body">-->
+                    <!--                                            <div class="s_rating s_rating_inline pt0 pb0" data-vcss="001"-->
+                    <!--                                                 data-icon="fa-star" data-snippet="s_rating" data-name="Rating">-->
+                    <!--                                                <p class="s_rating_title">UI/UX Design-->
+                    <!--                                                    <br/>-->
+                    <!--                                                </p>-->
+                    <!--                                                <div class="s_rating_icons o_not_editable">-->
+                    <!--                                                    <span class="s_rating_active_icons"-->
+                    <!--                                                          style="color: rgb(255, 156, 0);">-->
+                    <!--                                                        <i class="fa fa-star"/>-->
+                    <!--                                                        <i class="fa fa-star"/>-->
+                    <!--                                                        <i class="fa fa-star"/>-->
+                    <!--                                                    </span>-->
+                    <!--                                                    <span class="s_rating_inactive_icons">-->
+                    <!--                                                        <i class="fa fa-star-o"/>-->
+                    <!--                                                        <i class="fa fa-star-o"/>-->
+                    <!--                                                    </span>-->
+                    <!--                                                </div>-->
+                    <!--                                            </div>-->
+                    <!--                                            <p class="card-title">-->
+                    <!--                                                <strong>-->
+                    <!--                                                    <span style="font-size: 24px;">UI/UX Design for Beginners</span>-->
+                    <!--                                                </strong>-->
+                    <!--                                            </p>-->
+                    <!--                                            <p class="card-title">-->
+                    <!--                                                <strong>-->
+                    <!--                                                    <span style="font-size: 24px;">-->
+                    <!--                                                        <font style="color: rgb(244, 69, 11);">$98</font>-->
+                    <!--                                                    </span>-->
+                    <!--                                                </strong>-->
+                    <!--                                            </p>-->
+                    <!--                                            <div class="s_hr text-start pb0 pt0" data-snippet="s_hr"-->
+                    <!--                                                 data-name="Separator">-->
+                    <!--                                                <hr class="w-100 mx-auto"-->
+                    <!--                                                    style="border-top-width: 1px; border-top-style: dashed;"/>-->
+                    <!--                                            </div>-->
+                    <!--                                            <p class="card-title"><span class="fa fa-clock-o fa-2x"-->
+                    <!--                                                                        data-bs-original-title="" title=""-->
+                    <!--                                                                        aria-describedby="tooltip147830"/>&amp;nbsp;-->
+                    <!--                                                22hr 30min&amp;nbsp;&amp;nbsp;<span-->
+                    <!--                                                        class="fa fa-video-camera text-black fa-2x"-->
+                    <!--                                                        data-bs-original-title="" title=""-->
+                    <!--                                                        aria-describedby="tooltip673392"/>&amp;nbsp; 34 Courses&amp;nbsp;&amp;nbsp;-->
+                    <!--                                                <span class="fa fa-download fa-2x" data-bs-original-title="" title=""-->
+                    <!--                                                      aria-describedby="tooltip981390"/>-->
+                    <!--                                                250 Sales-->
+                    <!--                                                <br/>-->
+                    <!--                                            </p>-->
+                    <!--                                            <section style="background-image: none;" class="o_colored_level pb0">-->
+                    <!--                                                <ul>-->
+                    <!--                                                    <div class="footer-subscribe">-->
+                    <!--                                                        <button type="submit">Join Course</button>-->
+                    <!--                                                    </div>-->
+                    <!--                                                </ul>-->
+                    <!--                                            </section>-->
+                    <!--                                        </div>-->
+                    <!--                                    </div>-->
+                    <!--                                </div>-->
+                    <!--                                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">-->
+                    <!--                                    <div class="card text-bg-white h-100">-->
+                    <!--                                        &lt;!&ndash;                                        <img src="/web/image/962-2e250411/des2.png" alt=""&ndash;&gt;-->
+                    <!--                                        &lt;!&ndash;                                             class="card-img-top img img-fluid o_we_custom_image" data-original-id="959"&ndash;&gt;-->
+                    <!--                                        &lt;!&ndash;                                             data-original-src="/web/image/959-f82a5263/des2.png"&ndash;&gt;-->
+                    <!--                                        &lt;!&ndash;                                             data-mimetype="image/png" data-resize-width="445" data-bs-original-title=""&ndash;&gt;-->
+                    <!--                                        &lt;!&ndash;                                             title="" aria-describedby="tooltip998847" loading="lazy" style=""/>&ndash;&gt;-->
+                    <!--                                        <img src="/school_figma/static/description/des2.png" alt=""-->
+                    <!--                                             class="card-img-top img img-fluid o_we_custom_image" data-original-id="959"-->
+                    <!--                                             data-original-src="/school_figma/static/description/des2.png"-->
+                    <!--                                             data-mimetype="image/png" data-resize-width="445" data-bs-original-title=""-->
+                    <!--                                             title="" aria-describedby="tooltip998847" loading="lazy" style=""/>-->
+                    <!--                                        <div class="card-body">-->
+                    <!--                                            <div class="s_rating pb0 pt0 s_rating_inline" data-vcss="001"-->
+                    <!--                                                 data-icon="fa-star" data-snippet="s_rating" data-name="Rating">-->
+                    <!--                                                <p class="s_rating_title">UI/UX Design-->
+                    <!--                                                    <br/>-->
+                    <!--                                                </p>-->
+                    <!--                                                <div class="s_rating_icons o_not_editable">-->
+                    <!--                                                    <span class="s_rating_active_icons"-->
+                    <!--                                                          style="color: rgb(255, 156, 0);">-->
+                    <!--                                                        <i class="fa fa-star"/>-->
+                    <!--                                                        <i class="fa fa-star"/>-->
+                    <!--                                                        <i class="fa fa-star"/>-->
+                    <!--                                                    </span>-->
+                    <!--                                                    <span class="s_rating_inactive_icons">-->
+                    <!--                                                        <i class="fa fa-star-o"/>-->
+                    <!--                                                        <i class="fa fa-star-o"/>-->
+                    <!--                                                    </span>-->
+                    <!--                                                </div>-->
+                    <!--                                            </div>-->
+                    <!--                                            <h3 class="card-title">-->
+                    <!--                                                <strong>-->
+                    <!--                                                    <span style="font-size: 24px;">UI/UX Design for Beginners</span>-->
+                    <!--                                                </strong>-->
+                    <!--                                            </h3>-->
+                    <!--                                            <p class="card-title">-->
+                    <!--                                                <strong>-->
+                    <!--                                                    <span style="font-size: 24px;">-->
+                    <!--                                                        <font style="color: rgb(244, 69, 11);">$98</font>-->
+                    <!--                                                    </span>-->
+                    <!--                                                </strong>-->
+                    <!--                                            </p>-->
+                    <!--                                            <div class="s_hr text-start pb0 pt0" data-snippet="s_hr"-->
+                    <!--                                                 data-name="Separator">-->
+                    <!--                                                <hr class="w-100 mx-auto"-->
+                    <!--                                                    style="border-top-width: 1px; border-top-style: dashed;"/>-->
+                    <!--                                            </div>-->
+                    <!--                                            <p class="card-text"><span class="fa fa-clock-o fa-2x"-->
+                    <!--                                                                       data-bs-original-title="" title=""-->
+                    <!--                                                                       aria-describedby="tooltip147830"/>&amp;nbsp; 22hr-->
+                    <!--                                                30min&amp;nbsp;&amp;nbsp;<span-->
+                    <!--                                                        class="fa fa-video-camera text-black fa-2x"-->
+                    <!--                                                        data-bs-original-title="" title=""-->
+                    <!--                                                        aria-describedby="tooltip673392"/>&amp;nbsp; 34 Courses&amp;nbsp;&amp;nbsp;-->
+                    <!--                                                <span class="fa fa-download fa-2x" data-bs-original-title="" title=""-->
+                    <!--                                                      aria-describedby="tooltip981390"/>-->
+                    <!--                                                250 Sales-->
+                    <!--                                                <br/>-->
+                    <!--                                            </p>-->
+                    <!--                                            <section style="background-image: none;" class="o_colored_level pb0">-->
+                    <!--                                                <ul>-->
+                    <!--                                                    <div class="footer-subscribe">-->
+                    <!--                                                        <button type="submit">Join Course</button>-->
+                    <!--                                                    </div>-->
+                    <!--                                                </ul>-->
+                    <!--                                            </section>-->
+                    <!--                                        </div>-->
+                    <!--                                    </div>-->
+                    <!--                                </div>-->
+                    <!--                                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">-->
+                    <!--                                    <div class="card text-bg-white h-100">-->
+                    <!--                                        &lt;!&ndash;                                        <img src="/web/image/963-319f1da6/des3.png" alt=""&ndash;&gt;-->
+                    <!--                                        &lt;!&ndash;                                             class="card-img-top img img-fluid o_we_custom_image" data-original-id="960"&ndash;&gt;-->
+                    <!--                                        &lt;!&ndash;                                             data-original-src="/web/image/960-97ef137c/des3.png"&ndash;&gt;-->
+                    <!--                                        &lt;!&ndash;                                             data-mimetype="image/png" data-resize-width="441" loading="lazy" style=""&ndash;&gt;-->
+                    <!--                                        &lt;!&ndash;                                             data-bs-original-title="" title="" aria-describedby="tooltip151380"/>&ndash;&gt;-->
+                    <!--                                        <img src="/school_figma/static/description/des3.png" alt=""-->
+                    <!--                                             class="card-img-top img img-fluid o_we_custom_image" data-original-id="960"-->
+                    <!--                                             data-original-src="/school_figma/static/description/des3.png"-->
+                    <!--                                             data-mimetype="image/png" data-resize-width="441" loading="lazy" style=""-->
+                    <!--                                             data-bs-original-title="" title="" aria-describedby="tooltip151380"/>-->
+                    <!--                                        <div class="card-body">-->
+                    <!--                                            <div class="s_rating s_rating_inline pb0 pt0" data-vcss="001"-->
+                    <!--                                                 data-icon="fa-star" data-snippet="s_rating" data-name="Rating">-->
+                    <!--                                                <p class="s_rating_title">UI/UX Design-->
+                    <!--                                                    <br/>-->
+                    <!--                                                </p>-->
+                    <!--                                                <div class="s_rating_icons o_not_editable">-->
+                    <!--                                                    <span class="s_rating_active_icons"-->
+                    <!--                                                          style="color: rgb(255, 156, 0);">-->
+                    <!--                                                        <i class="fa fa-star"/>-->
+                    <!--                                                        <i class="fa fa-star"/>-->
+                    <!--                                                        <i class="fa fa-star"/>-->
+                    <!--                                                    </span>-->
+                    <!--                                                    <span class="s_rating_inactive_icons">-->
+                    <!--                                                        <i class="fa fa-star-o"/>-->
+                    <!--                                                        <i class="fa fa-star-o"/>-->
+                    <!--                                                    </span>-->
+                    <!--                                                </div>-->
+                    <!--                                            </div>-->
+                    <!--                                            <h3 class="card-title o_default_snippet_text">-->
+                    <!--                                                <strong>-->
+                    <!--                                                    <span style="font-size: 24px">UI/UX Design for Beginners</span>-->
+                    <!--                                                </strong>-->
+                    <!--                                            </h3>-->
+                    <!--                                            <p>-->
+                    <!--                                                <strong>-->
+                    <!--                                                    <span style="font-size: 24px">-->
+                    <!--                                                        <font style="color: rgb(244, 69, 11)">$98</font>-->
+                    <!--                                                    </span>-->
+                    <!--                                                </strong>-->
+                    <!--                                            </p>-->
+                    <!--                                            <p>-->
+
+                    <!--                                            </p>-->
+                    <!--                                            <p class="card-text"><span class="fa fa-clock-o fa-2x"/>&amp;nbsp; 22hr-->
+                    <!--                                                30min&amp;nbsp;&amp;nbsp;<span class="fa fa-video-camera fa-2x"/>&amp;nbsp;-->
+                    <!--                                                34 Courses&amp;nbsp;&amp;nbsp;-->
+                    <!--                                                <span class="fa fa-download fa-2x"/>-->
+                    <!--                                                250 Sales-->
+                    <!--                                                <br/>-->
+                    <!--                                            </p>-->
+                    <!--                                            <section style="background-image: none;" class="o_colored_level pb0">-->
+                    <!--                                                <ul>-->
+                    <!--                                                    <div class="footer-subscribe">-->
+                    <!--                                                        <button type="submit">Join Course</button>-->
+                    <!--                                                    </div>-->
+                    <!--                                                </ul>-->
+                    <!--                                            </section>-->
+                    <!--                                        </div>-->
+                    <!--                                    </div>-->
+                    <!--                                </div>-->
+                    <!--                            </div>-->
+                    <!--                        </div>-->
+                    <!--                    </section>-->
+
+
                     <section class="s_three_columns o_cc o_cc2 pt32 pb32 o_colored_level" data-vcss="001"
                              data-snippet="s_three_columns" data-name="Columns" style="background-image: none;">
                         <div class="container">
                             <div class="row d-flex align-items-stretch">
-                                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
-                                    <div class="card text-bg-white h-100">
-                                        <img src="/school_figma/static/description/des1.png" alt=""
-                                             class="card-img-top img img-fluid o_we_custom_image" data-original-id="958"
-                                             data-original-src="/school_figma/static/description/des1.png"
-                                             data-mimetype="image/png" data-resize-width="446" data-bs-original-title=""
-                                             title="" aria-describedby="tooltip517" loading="lazy" style=""/>
-                                        <div class="card-body">
-                                            <div class="s_rating s_rating_inline pt0 pb0" data-vcss="001"
-                                                 data-icon="fa-star" data-snippet="s_rating" data-name="Rating">
-                                                <p class="s_rating_title">UI/UX Design
+                                <t t-foreach="subjects" t-as="subject">
+                                    <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+                                        <div class="card text-bg-white h-100">
+                                            <img src="/school_figma/static/description/des1.png" alt=""
+                                                 class="card-img-top img img-fluid o_we_custom_image"
+                                                 data-original-id="958"
+                                                 data-original-src="/school_figma/static/description/des1.png"
+                                                 data-mimetype="image/png" data-resize-width="446"
+                                                 data-bs-original-title=""
+                                                 title="" aria-describedby="tooltip517" loading="lazy" style=""/>
+                                            <div class="card-body">
+                                                <div class="s_rating s_rating_inline pt0 pb0" data-vcss="001"
+                                                     data-icon="fa-star" data-snippet="s_rating" data-name="Rating">
+                                                    <p class="s_rating_title">
+                                                        <t t-esc="subject.name"/>
+                                                        <br/>
+                                                    </p>
+                                                    <div class="s_rating_icons o_not_editable">
+                                                        <span class="s_rating_active_icons"
+                                                              style="color: rgb(255, 156, 0);">
+                                                            <i class="fa fa-star"/>
+                                                            <i class="fa fa-star"/>
+                                                            <i class="fa fa-star"/>
+                                                        </span>
+                                                        <span class="s_rating_inactive_icons">
+                                                            <i class="fa fa-star-o"/>
+                                                            <i class="fa fa-star-o"/>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <p class="card-title">
+                                                    <strong>
+                                                        <span style="font-size: 24px;">
+                                                            <t t-esc="subject.name"/>
+                                                        </span>
+                                                    </strong>
+                                                </p>
+                                                <p class="card-title">
+                                                    <strong>
+                                                        <span style="font-size: 24px;">
+                                                            <font style="color: rgb(244, 69, 11);">$98</font>
+                                                        </span>
+                                                    </strong>
+                                                </p>
+                                                <div class="s_hr text-start pb0 pt0" data-snippet="s_hr"
+                                                     data-name="Separator">
+                                                    <hr class="w-100 mx-auto"
+                                                        style="border-top-width: 1px; border-top-style: dashed;"/>
+                                                </div>
+                                                <p class="card-title"><span class="fa fa-clock-o fa-2x"
+                                                                            data-bs-original-title="" title=""
+                                                                            aria-describedby="tooltip147830"/>&amp;nbsp;
+                                                    22hr 30min&amp;nbsp;&amp;nbsp;<span
+                                                            class="fa fa-video-camera text-black fa-2x"
+                                                            data-bs-original-title="" title=""
+                                                            aria-describedby="tooltip673392"/>&amp;nbsp; 34 Courses&amp;nbsp;&amp;nbsp;
+                                                    <span class="fa fa-download fa-2x" data-bs-original-title=""
+                                                          title=""
+                                                          aria-describedby="tooltip981390"/>
+                                                    250 Sales
                                                     <br/>
                                                 </p>
-                                                <div class="s_rating_icons o_not_editable">
-                                                    <span class="s_rating_active_icons"
-                                                          style="color: rgb(255, 156, 0);">
-                                                        <i class="fa fa-star"/>
-                                                        <i class="fa fa-star"/>
-                                                        <i class="fa fa-star"/>
-                                                    </span>
-                                                    <span class="s_rating_inactive_icons">
-                                                        <i class="fa fa-star-o"/>
-                                                        <i class="fa fa-star-o"/>
-                                                    </span>
-                                                </div>
+                                                <section style="background-image: none;" class="o_colored_level pb0">
+                                                    <ul>
+                                                        <div class="footer-subscribe">
+                                                            <button type="submit">Join Course</button>
+                                                        </div>
+                                                    </ul>
+                                                </section>
                                             </div>
-                                            <p class="card-title">
-                                                <strong>
-                                                    <span style="font-size: 24px;">UI/UX Design for Beginners</span>
-                                                </strong>
-                                            </p>
-                                            <p class="card-title">
-                                                <strong>
-                                                    <span style="font-size: 24px;">
-                                                        <font style="color: rgb(244, 69, 11);">$98</font>
-                                                    </span>
-                                                </strong>
-                                            </p>
-                                            <div class="s_hr text-start pb0 pt0" data-snippet="s_hr"
-                                                 data-name="Separator">
-                                                <hr class="w-100 mx-auto"
-                                                    style="border-top-width: 1px; border-top-style: dashed;"/>
-                                            </div>
-                                            <p class="card-title"><span class="fa fa-clock-o fa-2x"
-                                                                        data-bs-original-title="" title=""
-                                                                        aria-describedby="tooltip147830"/>&amp;nbsp;
-                                                22hr 30min&amp;nbsp;&amp;nbsp;<span
-                                                        class="fa fa-video-camera text-black fa-2x"
-                                                        data-bs-original-title="" title=""
-                                                        aria-describedby="tooltip673392"/>&amp;nbsp; 34 Courses&amp;nbsp;&amp;nbsp;
-                                                <span class="fa fa-download fa-2x" data-bs-original-title="" title=""
-                                                      aria-describedby="tooltip981390"/>
-                                                250 Sales
-                                                <br/>
-                                            </p>
-                                            <section style="background-image: none;" class="o_colored_level pb0">
-                                                <ul>
-                                                    <div class="footer-subscribe">
-                                                        <button type="submit">Join Course</button>
-                                                    </div>
-                                                </ul>
-                                            </section>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
-                                    <div class="card text-bg-white h-100">
-                                        <!--                                        <img src="/web/image/962-2e250411/des2.png" alt=""-->
-                                        <!--                                             class="card-img-top img img-fluid o_we_custom_image" data-original-id="959"-->
-                                        <!--                                             data-original-src="/web/image/959-f82a5263/des2.png"-->
-                                        <!--                                             data-mimetype="image/png" data-resize-width="445" data-bs-original-title=""-->
-                                        <!--                                             title="" aria-describedby="tooltip998847" loading="lazy" style=""/>-->
-                                        <img src="/school_figma/static/description/des2.png" alt=""
-                                             class="card-img-top img img-fluid o_we_custom_image" data-original-id="959"
-                                             data-original-src="/school_figma/static/description/des2.png"
-                                             data-mimetype="image/png" data-resize-width="445" data-bs-original-title=""
-                                             title="" aria-describedby="tooltip998847" loading="lazy" style=""/>
-                                        <div class="card-body">
-                                            <div class="s_rating pb0 pt0 s_rating_inline" data-vcss="001"
-                                                 data-icon="fa-star" data-snippet="s_rating" data-name="Rating">
-                                                <p class="s_rating_title">UI/UX Design
-                                                    <br/>
-                                                </p>
-                                                <div class="s_rating_icons o_not_editable">
-                                                    <span class="s_rating_active_icons"
-                                                          style="color: rgb(255, 156, 0);">
-                                                        <i class="fa fa-star"/>
-                                                        <i class="fa fa-star"/>
-                                                        <i class="fa fa-star"/>
-                                                    </span>
-                                                    <span class="s_rating_inactive_icons">
-                                                        <i class="fa fa-star-o"/>
-                                                        <i class="fa fa-star-o"/>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <h3 class="card-title">
-                                                <strong>
-                                                    <span style="font-size: 24px;">UI/UX Design for Beginners</span>
-                                                </strong>
-                                            </h3>
-                                            <p class="card-title">
-                                                <strong>
-                                                    <span style="font-size: 24px;">
-                                                        <font style="color: rgb(244, 69, 11);">$98</font>
-                                                    </span>
-                                                </strong>
-                                            </p>
-                                            <div class="s_hr text-start pb0 pt0" data-snippet="s_hr"
-                                                 data-name="Separator">
-                                                <hr class="w-100 mx-auto"
-                                                    style="border-top-width: 1px; border-top-style: dashed;"/>
-                                            </div>
-                                            <p class="card-text"><span class="fa fa-clock-o fa-2x"
-                                                                       data-bs-original-title="" title=""
-                                                                       aria-describedby="tooltip147830"/>&amp;nbsp; 22hr
-                                                30min&amp;nbsp;&amp;nbsp;<span
-                                                        class="fa fa-video-camera text-black fa-2x"
-                                                        data-bs-original-title="" title=""
-                                                        aria-describedby="tooltip673392"/>&amp;nbsp; 34 Courses&amp;nbsp;&amp;nbsp;
-                                                <span class="fa fa-download fa-2x" data-bs-original-title="" title=""
-                                                      aria-describedby="tooltip981390"/>
-                                                250 Sales
-                                                <br/>
-                                            </p>
-                                            <section style="background-image: none;" class="o_colored_level pb0">
-                                                <ul>
-                                                    <div class="footer-subscribe">
-                                                        <button type="submit">Join Course</button>
-                                                    </div>
-                                                </ul>
-                                            </section>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
-                                    <div class="card text-bg-white h-100">
-                                        <!--                                        <img src="/web/image/963-319f1da6/des3.png" alt=""-->
-                                        <!--                                             class="card-img-top img img-fluid o_we_custom_image" data-original-id="960"-->
-                                        <!--                                             data-original-src="/web/image/960-97ef137c/des3.png"-->
-                                        <!--                                             data-mimetype="image/png" data-resize-width="441" loading="lazy" style=""-->
-                                        <!--                                             data-bs-original-title="" title="" aria-describedby="tooltip151380"/>-->
-                                        <img src="/school_figma/static/description/des3.png" alt=""
-                                             class="card-img-top img img-fluid o_we_custom_image" data-original-id="960"
-                                             data-original-src="/school_figma/static/description/des3.png"
-                                             data-mimetype="image/png" data-resize-width="441" loading="lazy" style=""
-                                             data-bs-original-title="" title="" aria-describedby="tooltip151380"/>
-                                        <div class="card-body">
-                                            <div class="s_rating s_rating_inline pb0 pt0" data-vcss="001"
-                                                 data-icon="fa-star" data-snippet="s_rating" data-name="Rating">
-                                                <p class="s_rating_title">UI/UX Design
-                                                    <br/>
-                                                </p>
-                                                <div class="s_rating_icons o_not_editable">
-                                                    <span class="s_rating_active_icons"
-                                                          style="color: rgb(255, 156, 0);">
-                                                        <i class="fa fa-star"/>
-                                                        <i class="fa fa-star"/>
-                                                        <i class="fa fa-star"/>
-                                                    </span>
-                                                    <span class="s_rating_inactive_icons">
-                                                        <i class="fa fa-star-o"/>
-                                                        <i class="fa fa-star-o"/>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <h3 class="card-title o_default_snippet_text">
-                                                <strong>
-                                                    <span style="font-size: 24px">UI/UX Design for Beginners</span>
-                                                </strong>
-                                            </h3>
-                                            <p>
-                                                <strong>
-                                                    <span style="font-size: 24px">
-                                                        <font style="color: rgb(244, 69, 11)">$98</font>
-                                                    </span>
-                                                </strong>
-                                            </p>
-                                            <p>
-
-                                            </p>
-                                            <p class="card-text"><span class="fa fa-clock-o fa-2x"/>&amp;nbsp; 22hr
-                                                30min&amp;nbsp;&amp;nbsp;<span class="fa fa-video-camera fa-2x"/>&amp;nbsp;
-                                                34 Courses&amp;nbsp;&amp;nbsp;
-                                                <span class="fa fa-download fa-2x"/>
-                                                250 Sales
-                                                <br/>
-                                            </p>
-                                            <section style="background-image: none;" class="o_colored_level pb0">
-                                                <ul>
-                                                    <div class="footer-subscribe">
-                                                        <button type="submit">Join Course</button>
-                                                    </div>
-                                                </ul>
-                                            </section>
-                                        </div>
-                                    </div>
-                                </div>
+                                </t>
                             </div>
                         </div>
                     </section>
+
 
                     <section class="s_masonry_block o_colored_level pt0" data-vcss="001" data-vxml="001"
                              data-snippet="s_masonry_block" data-name="Masonry"
@@ -590,111 +757,119 @@
                              style="background-image: none;">
                         <div class="container">
                             <div class="row s_nb_column_fixed s_col_no_bgcolor">
-
-                                <div class="s_media_list_item col-lg-4 pb0 pt0" data-name="Media item">
-                                    <div class="row s_col_no_resize s_col_no_bgcolor g-0 o_cc o_cc1 o_colored_level align-items-center">
-                                        <div class="align-self-stretch s_media_list_img_wrapper col-lg-4">
-                                            <br/>
-                                        </div>
-                                        <div class="s_media_list_body col-lg-8">
-                                            <p>
-                                                <span style="font-size: 14px;">“Complete account of the system and
-                                                </span>
+                                <t t-foreach="students" t-as="student">
+                                    <div class="s_media_list_item col-lg-4 pb0 pt0" data-name="Media item">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor g-0 o_cc o_cc1 o_colored_level align-items-center">
+                                            <div class="align-self-stretch s_media_list_img_wrapper col-lg-4">
                                                 <br/>
-                                                <span style="font-size: 14px;">expound the actual Contrary to popular
-                                                </span>
-                                                <br/>
-                                                <span style="font-size: 14px;">belief, Lorem Ipsum is not simply</span>
-                                                <br/>
-                                                <span style="font-size: 14px;">random text. It has roots”</span>
-                                            </p>
-                                            <p>
-                                                <img src="/school_figma/static/description/kirk.png" alt=""
-                                                     class="s_media_list_img h-100 w-100 rounded-circle img img-fluid o_we_custom_image"
-                                                     style="width: 25% !important;" data-original-id="653"
-                                                     data-original-src="/school_figma/static/description/kirk.png"
-                                                     data-mimetype="image/png" data-resize-width="36" loading="lazy"/>
-                                                <strong>DannetteP.Cervantes</strong>
-                                            </p>
-                                            <p>Web&amp;nbsp;Developper
-                                                <br/>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="s_media_list_item col-lg-4 pb0 pt0" data-name="Media item">
-                                    <div class="row s_col_no_resize s_col_no_bgcolor g-0 o_cc o_cc1 o_colored_level align-items-center"
-                                         style="">
-                                        <div class="align-self-stretch s_media_list_img_wrapper col-lg-4">
-                                            <br/>
-                                        </div>
-                                        <div class="s_media_list_body col-lg-8">
-                                            <p>
-                                                <span style="font-size: 14px;">“Teachings of the great explorer of
-                                                    truth,
-                                                </span>
-                                                <br/>
-                                                <span style="font-size: 14px;">the master-builder of human happiness.
-                                                </span>
-                                                <br/>
-                                                <span style="font-size: 14px;">No one rejects, dislikes, or avoids
-                                                    pleasure
-                                                </span>
-                                                <br/>
-                                                <span style="font-size: 14px;">itself, pleasure itself.”</span>
-                                            </p>
-                                            <p>
-                                                <strong>​</strong>
-                                                <img src="/school_figma/static/description/denette.png" alt=""
-                                                     class="s_media_list_img h-100 w-100 rounded-circle img img-fluid o_we_custom_image"
-                                                     style="width: 25% !important;" data-original-id="698"
-                                                     data-original-src="/school_figma/static/description/denette.png"
-                                                     data-mimetype="image/png" data-resize-width="34" loading="lazy"/>
-                                                <strong>Clara R.Altman</strong>
-                                            </p>
-                                            <p>Web Design
-                                                <br/>
-                                            </p>
+                                            </div>
+                                            <div class="s_media_list_body col-lg-8">
+                                                <p>
+                                                    <t t-esc="student.comment"/>
+                                                    <!--                                                <span style="font-size: 14px;">“Complete account of the system and-->
+                                                    <!--                                                </span>-->
+                                                    <!--                                                <br/>-->
+                                                    <!--                                                <span style="font-size: 14px;">expound the actual Contrary to popular-->
+                                                    <!--                                                </span>-->
+                                                    <!--                                                <br/>-->
+                                                    <!--                                                <span style="font-size: 14px;">belief, Lorem Ipsum is not simply</span>-->
+                                                    <!--                                                <br/>-->
+                                                    <!--                                                <span style="font-size: 14px;">random text. It has roots”</span>-->
+                                                </p>
+                                                <p>
+                                                    <img t-if="student.photo"
+                                                         t-att-src="'data:image/png;base64,' + student.photo.decode('utf-8')"
+                                                         alt=""
+                                                         class="s_media_list_img h-100 w-100 rounded-circle img img-fluid o_we_custom_image"
+                                                         style="width: 25% !important;" data-original-id="653"
+                                                         data-original-src="/school_figma/static/description/kirk.png"
+                                                         data-mimetype="image/png" data-resize-width="36"
+                                                         loading="lazy"/>
+                                                    <strong>
+                                                        <t t-esc="student.name"/>
+                                                    </strong>
+                                                </p>
+                                                <p>
+                                                    <t t-esc="student.standard_id.name"/>
+                                                    <br/>
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </t>
 
-                                <div class="s_media_list_item col-lg-4 pb0 pt0" data-name="Media item">
-                                    <div class="row s_col_no_resize s_col_no_bgcolor g-0 o_cc o_cc1 o_colored_level align-items-center"
-                                         style="">
-                                        <div class="align-self-stretch s_media_list_img_wrapper col-lg-4">
-                                            <br/>
-                                        </div>
-                                        <div class="s_media_list_body col-lg-8">
-                                            <p>
-                                                <span style="font-size: 14px;">“There are many variations of passages
-                                                </span>
-                                                <br/>
-                                                <span style="font-size: 14px;">of Lorem Ipsum available, but the
-                                                    majority
-                                                </span>
-                                                <br/>
-                                                <span style="font-size: 14px;">have suffered alteration in some form,
-                                                </span>
-                                                <br/>
-                                                <span style="font-size: 14px;">by injected humour”</span>
-                                            </p>
-                                            <p>
-                                                <strong>​</strong>
-                                                <img src="/school_figma/static/description/clara.png" alt=""
-                                                     class="s_media_list_img h-100 w-100 rounded-circle img img-fluid o_we_custom_image"
-                                                     style="width: 25% !important;" data-original-id="699"
-                                                     data-original-src="/school_figma/static/description/clara.png"
-                                                     data-mimetype="image/png" data-resize-width="30" loading="lazy"/>
-                                                <strong>Clara R.Altman</strong>
-                                            </p>
-                                            <p>UI&amp;amp;UX Designer
-                                                <br/>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+                                <!--                                <div class="s_media_list_item col-lg-4 pb0 pt0" data-name="Media item">-->
+                                <!--                                    <div class="row s_col_no_resize s_col_no_bgcolor g-0 o_cc o_cc1 o_colored_level align-items-center"-->
+                                <!--                                         style="">-->
+                                <!--                                        <div class="align-self-stretch s_media_list_img_wrapper col-lg-4">-->
+                                <!--                                            <br/>-->
+                                <!--                                        </div>-->
+                                <!--                                        <div class="s_media_list_body col-lg-8">-->
+                                <!--                                            <p>-->
+                                <!--                                                <span style="font-size: 14px;">“Teachings of the great explorer of-->
+                                <!--                                                    truth,-->
+                                <!--                                                </span>-->
+                                <!--                                                <br/>-->
+                                <!--                                                <span style="font-size: 14px;">the master-builder of human happiness.-->
+                                <!--                                                </span>-->
+                                <!--                                                <br/>-->
+                                <!--                                                <span style="font-size: 14px;">No one rejects, dislikes, or avoids-->
+                                <!--                                                    pleasure-->
+                                <!--                                                </span>-->
+                                <!--                                                <br/>-->
+                                <!--                                                <span style="font-size: 14px;">itself, pleasure itself.”</span>-->
+                                <!--                                            </p>-->
+                                <!--                                            <p>-->
+                                <!--                                                <strong>​</strong>-->
+                                <!--                                                <img src="/school_figma/static/description/denette.png" alt=""-->
+                                <!--                                                     class="s_media_list_img h-100 w-100 rounded-circle img img-fluid o_we_custom_image"-->
+                                <!--                                                     style="width: 25% !important;" data-original-id="698"-->
+                                <!--                                                     data-original-src="/school_figma/static/description/denette.png"-->
+                                <!--                                                     data-mimetype="image/png" data-resize-width="34" loading="lazy"/>-->
+                                <!--                                                <strong>Clara R.Altman</strong>-->
+                                <!--                                            </p>-->
+                                <!--                                            <p>Web Design-->
+                                <!--                                                <br/>-->
+                                <!--                                            </p>-->
+                                <!--                                        </div>-->
+                                <!--                                    </div>-->
+                                <!--                                </div>-->
+
+                                <!--                                <div class="s_media_list_item col-lg-4 pb0 pt0" data-name="Media item">-->
+                                <!--                                    <div class="row s_col_no_resize s_col_no_bgcolor g-0 o_cc o_cc1 o_colored_level align-items-center"-->
+                                <!--                                         style="">-->
+                                <!--                                        <div class="align-self-stretch s_media_list_img_wrapper col-lg-4">-->
+                                <!--                                            <br/>-->
+                                <!--                                        </div>-->
+                                <!--                                        <div class="s_media_list_body col-lg-8">-->
+                                <!--                                            <p>-->
+                                <!--                                                <span style="font-size: 14px;">“There are many variations of passages-->
+                                <!--                                                </span>-->
+                                <!--                                                <br/>-->
+                                <!--                                                <span style="font-size: 14px;">of Lorem Ipsum available, but the-->
+                                <!--                                                    majority-->
+                                <!--                                                </span>-->
+                                <!--                                                <br/>-->
+                                <!--                                                <span style="font-size: 14px;">have suffered alteration in some form,-->
+                                <!--                                                </span>-->
+                                <!--                                                <br/>-->
+                                <!--                                                <span style="font-size: 14px;">by injected humour”</span>-->
+                                <!--                                            </p>-->
+                                <!--                                            <p>-->
+                                <!--                                                <strong>​</strong>-->
+                                <!--                                                <img src="/school_figma/static/description/clara.png" alt=""-->
+                                <!--                                                     class="s_media_list_img h-100 w-100 rounded-circle img img-fluid o_we_custom_image"-->
+                                <!--                                                     style="width: 25% !important;" data-original-id="699"-->
+                                <!--                                                     data-original-src="/school_figma/static/description/clara.png"-->
+                                <!--                                                     data-mimetype="image/png" data-resize-width="30" loading="lazy"/>-->
+                                <!--                                                <strong>Clara R.Altman</strong>-->
+                                <!--                                            </p>-->
+                                <!--                                            <p>UI&amp;amp;UX Designer-->
+                                <!--                                                <br/>-->
+                                <!--                                            </p>-->
+                                <!--                                        </div>-->
+                                <!--                                    </div>-->
+                                <!--                                </div>-->
 
                             </div>
                         </div>
@@ -752,105 +927,109 @@
                              data-snippet="s_three_columns" data-name="Columns" style="background-image: none;">
                         <div class="container">
                             <div class="row d-flex align-items-stretch">
-                                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
-                                    <div class="card text-bg-white h-100">
-                                        <img src="/school_figma/static/description/matthew.png" alt=""
-                                             class="card-img-top img img-fluid o_we_custom_image" data-original-id="637"
-                                             data-original-src="/school_figma/static/description/matthew.png"
-                                             data-mimetype="image/png" data-resize-width="362" loading="lazy" style=""/>
-                                        <div class="card-body">
-                                            <h3 class="card-title">Matthew E.McNatt
-                                                <br/>
-                                            </h3>
-                                            <p class="card-text">Professor @George Brown College</p>
-                                            <p class="card-text">&amp;nbsp;Ut enim add minim veniam,quis nost execution
-                                                ullamcolaboris nisi ut allquip ex commodo.
-                                            </p>
-                                            <p class="card-text">
-                                                <font style="color: rgb(239, 94, 6);">
-                                                    <span style="font-size: 18px;">Engineering physics</span>
-                                                </font>
-                                                <br/>
-                                            </p>
+                                <t t-foreach="team_works" t-as="team_work">
+                                    <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+                                        <div class="card text-bg-white h-100">
+                                            <img t-if="team_work.image"
+                                                 t-att-src="'data:image/png;base64,' + team_work.image.decode('utf-8')"
+                                                 alt=""
+                                                 class="card-img-top img img-fluid o_we_custom_image"
+                                                 data-original-id="637"
+                                                 data-mimetype="image/png" data-resize-width="362" loading="lazy"
+                                                 style=""/>
+                                            <div class="card-body">
+                                                <h3 class="card-title">
+                                                    <t t-esc="team_work.name"/>
+                                                    <br/>
+                                                </h3>
+                                                <p class="card-text">
+                                                    <t t-esc="team_work.position"/>
+                                                </p>
+                                                <p class="card-text">
+                                                    <t t-raw="team_work.description"/>
+                                                </p>
+                                                <p class="card-text">
+                                                    <font style="color: rgb(239, 94, 6);">
+                                                        <span style="font-size: 18px;">
+                                                            <t t-esc="team_work.subject"/>
+                                                        </span>
+                                                    </font>
+                                                    <br/>
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
-                                    <div class="card text-bg-white h-100">
-                                        <img src="/school_figma/static/description/tracy.png" alt=""
-                                             class="card-img-top img img-fluid o_we_custom_image" data-original-id="638"
-                                             data-original-src="/school_figma/static/description/tracy.png"
-                                             data-mimetype="image/png" data-resize-width="417" loading="lazy" style=""/>
-                                        <div class="card-body">
-                                            <h3 class="card-title">Tracy D.Wright
-                                            </h3>
-                                            <p class="card-text">Professor @George Brown College</p>
-                                            <p class="card-text">&amp;nbsp;Ut enim add minim veniam,quis nost execution
-                                                ullamcolaboris nisi ut allquip ex commodo.
-                                            </p>
-                                            <p class="card-title">
-                                                <font style="color: rgb(239, 94, 6);">
-                                                    <span style="font-size: 18px;">Engineering physics</span>
-                                                </font>
-                                                <br/>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
-                                    <div class="card text-bg-white h-100">
-                                        <img src="/school_figma/static/description/cynthia.png" alt=""
-                                             class="card-img-top img img-fluid o_we_custom_image" data-original-id="639"
-                                             data-original-src="/school_figma/static/description/cynthia.png"
-                                             data-mimetype="image/png" data-resize-width="401" loading="lazy" style=""
-                                             data-bs-original-title="" title="" aria-describedby="tooltip387637"/>
-                                        <div class="card-body">
-                                            <h3 class="card-title">Cynthia A.Nelso
-                                                <br/>
-                                            </h3>
-                                            <p class="card-text">Professor @George Brown College</p>
-                                            <p class="card-text">&amp;nbsp;Ut enim add minim veniam,quis nost execution
-                                                ullamcolaboris nisi ut allquip ex commodo.
-                                            </p>
-                                            <h3 class="card-title o_default_snippet_text">
-                                                <font style="color: rgb(239, 94, 6);">
-                                                    <span style="font-size: 18px;">Engineering physics</span>
-                                                </font>
-                                                <br/>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
+                                    <!--                                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">-->
+                                    <!--                                    <div class="card text-bg-white h-100">-->
+                                    <!--                                        <img src="/school_figma/static/description/tracy.png" alt=""-->
+                                    <!--                                             class="card-img-top img img-fluid o_we_custom_image" data-original-id="638"-->
+                                    <!--                                             data-original-src="/school_figma/static/description/tracy.png"-->
+                                    <!--                                             data-mimetype="image/png" data-resize-width="417" loading="lazy" style=""/>-->
+                                    <!--                                        <div class="card-body">-->
+                                    <!--                                            <h3 class="card-title">Tracy D.Wright-->
+                                    <!--                                            </h3>-->
+                                    <!--                                            <p class="card-text">Professor @George Brown College</p>-->
+                                    <!--                                            <p class="card-text">&amp;nbsp;Ut enim add minim veniam,quis nost execution-->
+                                    <!--                                                ullamcolaboris nisi ut allquip ex commodo.-->
+                                    <!--                                            </p>-->
+                                    <!--                                            <p class="card-title">-->
+                                    <!--                                                <font style="color: rgb(239, 94, 6);">-->
+                                    <!--                                                    <span style="font-size: 18px;">Engineering physics</span>-->
+                                    <!--                                                </font>-->
+                                    <!--                                                <br/>-->
+                                    <!--                                            </p>-->
+                                    <!--                                        </div>-->
+                                    <!--                                    </div>-->
+                                    <!--                                </div>-->
+                                    <!--                                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">-->
+                                    <!--                                    <div class="card text-bg-white h-100">-->
+                                    <!--                                        <img src="/school_figma/static/description/cynthia.png" alt=""-->
+                                    <!--                                             class="card-img-top img img-fluid o_we_custom_image" data-original-id="639"-->
+                                    <!--                                             data-original-src="/school_figma/static/description/cynthia.png"-->
+                                    <!--                                             data-mimetype="image/png" data-resize-width="401" loading="lazy" style=""-->
+                                    <!--                                             data-bs-original-title="" title="" aria-describedby="tooltip387637"/>-->
+                                    <!--                                        <div class="card-body">-->
+                                    <!--                                            <h3 class="card-title">Cynthia A.Nelso-->
+                                    <!--                                                <br/>-->
+                                    <!--                                            </h3>-->
+                                    <!--                                            <p class="card-text">Professor @George Brown College</p>-->
+                                    <!--                                            <p class="card-text">&amp;nbsp;Ut enim add minim veniam,quis nost execution-->
+                                    <!--                                                ullamcolaboris nisi ut allquip ex commodo.-->
+                                    <!--                                            </p>-->
+                                    <!--                                            <h3 class="card-title o_default_snippet_text">-->
+                                    <!--                                                <font style="color: rgb(239, 94, 6);">-->
+                                    <!--                                                    <span style="font-size: 18px;">Engineering physics</span>-->
+                                    <!--                                                </font>-->
+                                    <!--                                                <br/>-->
+                                    <!--                                            </h3>-->
+                                    <!--                                        </div>-->
+                                    <!--                                    </div>-->
+                                    <!--                                </div>-->
+                                </t>
                             </div>
                         </div>
                     </section>
-
-                    <section class="s_call_to_action o_cc o_cc3 pt48 o_colored_level pb104"
+                    <section class="s_call_to_action o_cc o_cc3 o_colored_level pb104 pt32"
                              data-snippet="s_call_to_action" data-name="Call to Action" style="background-image: none;">
                         <div class="o_container_small">
                             <div class="row">
                                 <div class="pb16 o_colored_level col-lg-8">
-                                    <h4>
+                                    <h4 style="text-align: center;">
                                         <b>
-                                            <span class="oe-tabs" style="width: 5px;"/>
-                                            <span class="oe-tabs" style="width: 34.0167px;"/>​
-                                            <span class="oe-tabs"
-                                                  style="width: 40px;"/>
                                             ​Subscribe
-                                            to our newsletter​
+                                            to our newsletter​&amp;nbsp;
                                         </b>
-                                        <br/>
                                     </h4>
-                                    <p><span class="oe-tabs" style="width: 5px;"/>​<span class="oe-tabs"
-                                                                                         style="width: 40px;"/>​<span
-                                            class="oe-tabs" style="width: 40px;"/>​lorem ipsum is simply dummy
+                                    <h4 style="text-align: center;">lorem ipsum is simply dummy
                                         text of
                                         the printing
                                         <br/>
-                                    </p>
+                                    </h4>
                                 </div>
 
                             </div>
+
+
                             <style>
                                 .footer-subscribe {
                                 text-align: center;
@@ -890,6 +1069,98 @@
                             </section>
                         </div>
                     </section>
+
+                    <!--                    <section class="s_call_to_action o_cc o_cc3 pt48 o_colored_level pb104"-->
+                    <!--                             data-snippet="s_call_to_action" data-name="Call to Action" style="background-image: none;">-->
+                    <!--                        <div class="o_container_small">-->
+                    <!--                            <div class="row">-->
+                    <!--                                <div class="pb16 o_colored_level col-lg-8">-->
+                    <!--                                    <h4>-->
+                    <!--                                        <b>-->
+                    <!--                                            <span class="oe-tabs" style="width: 5px;"/>-->
+                    <!--                                            <span class="oe-tabs" style="width: 34.0167px;"/>​-->
+                    <!--                                            <span class="oe-tabs"-->
+                    <!--                                                  style="width: 40px;"/>-->
+                    <!--                                            ​Subscribe-->
+                    <!--                                            to our newsletter​-->
+                    <!--                                        </b>-->
+                    <!--                                        <br/>-->
+                    <!--                                    </h4>-->
+                    <!--                                    <p><span class="oe-tabs" style="width: 5px;"/>​<span class="oe-tabs"-->
+                    <!--                                                                                         style="width: 40px;"/>​<span-->
+                    <!--                                            class="oe-tabs" style="width: 40px;"/>​lorem ipsum is simply dummy-->
+                    <!--                                        text of-->
+                    <!--                                        the printing-->
+                    <!--                                        <br/>-->
+                    <!--                                    </p>-->
+                    <!--                                </div>-->
+
+                    <!--                            </div>-->
+                    <!--&lt;!&ndash;                            <style>&ndash;&gt;-->
+                    <!--&lt;!&ndash;                                /* Existing styles for larger screens */&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;                                /* Media query for screens smaller than 768px (adjust the value as needed) */&ndash;&gt;-->
+                    <!--&lt;!&ndash;                                @media (max-width: 768px) {&ndash;&gt;-->
+                    <!--&lt;!&ndash;                                .footer-subscribe {&ndash;&gt;-->
+                    <!--&lt;!&ndash;                                text-align: center;&ndash;&gt;-->
+                    <!--&lt;!&ndash;                                }&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;                                .email-input {&ndash;&gt;-->
+                    <!--&lt;!&ndash;                                display: block; /* Change to block for stacking elements */&ndash;&gt;-->
+                    <!--&lt;!&ndash;                                margin-bottom: 10px; /* Add margin for spacing between elements */&ndash;&gt;-->
+                    <!--&lt;!&ndash;                                }&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;                                .email-input input[type="email"] {&ndash;&gt;-->
+                    <!--&lt;!&ndash;                                width: 100%; /* Make the input field full width */&ndash;&gt;-->
+                    <!--&lt;!&ndash;                                box-sizing: border-box; /* Include padding and border in the width calculation */&ndash;&gt;-->
+                    <!--&lt;!&ndash;                                margin-bottom: 10px; /* Add margin for spacing */&ndash;&gt;-->
+                    <!--&lt;!&ndash;                                }&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;                                .email-input button {&ndash;&gt;-->
+                    <!--&lt;!&ndash;                                width: 100%; /* Make the button full width */&ndash;&gt;-->
+                    <!--&lt;!&ndash;                                }&ndash;&gt;-->
+                    <!--&lt;!&ndash;                                }&ndash;&gt;-->
+                    <!--&lt;!&ndash;                            </style>&ndash;&gt;-->
+
+                    <!--                            <style>-->
+                    <!--                                .footer-subscribe {-->
+                    <!--                                text-align: center;-->
+                    <!--                                }-->
+                    <!--                                .email-input {-->
+                    <!--                                display: inline-block;-->
+                    <!--                                border: 1px solid #ccc;-->
+                    <!--                                border-radius: 50px; /* This creates an oval shape */-->
+                    <!--                                overflow: hidden;-->
+                    <!--                                }-->
+                    <!--                                .email-input input[type="email"] {-->
+                    <!--                                padding: 10px;-->
+                    <!--                                border: none;-->
+                    <!--                                outline: none;-->
+                    <!--                                border-radius: 50px; /* Match the container's border radius */-->
+                    <!--                                }-->
+                    <!--                                .email-input button {-->
+                    <!--                                background-color: orange;-->
+                    <!--                                color: white;-->
+                    <!--                                padding: 10px 20px;-->
+                    <!--                                border: none;-->
+                    <!--                                border-radius: 50px; /* Match the container's border radius */-->
+                    <!--                                cursor: pointer;-->
+                    <!--                                }-->
+                    <!--                            </style>-->
+
+
+                    <!--                            <section style="background-image: none;" class="o_colored_level pb0">-->
+                    <!--                                <ul>-->
+                    <!--                                    <div class="footer-subscribe">-->
+                    <!--                                        <div class="email-input">-->
+                    <!--                                            <input type="email" spellcheck="false" placeholder="Email Address"/>-->
+                    <!--                                            <button type="submit">Send</button>-->
+                    <!--                                        </div>-->
+                    <!--                                    </div>-->
+                    <!--                                </ul>-->
+                    <!--                            </section>-->
+                    <!--                        </div>-->
+                    <!--                    </section>-->
                 </t>
             </xpath>
         </template>

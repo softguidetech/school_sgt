@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_team_work_form" model="ir.ui.view">
+        <field name="name">team.work.form</field>
+        <field name="model">team.work</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" class="oe_inline"/>
+                            <field name="image" widget="image" class="oe_avatar oe_left"/>
+                        </group>
+                        <group>
+                            <field name="position"/>
+                            <field name="subject"/>
+                            <field name="description" widget="html" options="{'style': 'height: 100px;'}"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- Tree View -->
+    <record id="view_team_work_tree" model="ir.ui.view">
+        <field name="name">team.work.tree</field>
+        <field name="model">team.work</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="position"/>
+                <field name="subject"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_team_work_form" model="ir.actions.act_window">
+        <field name="name">Team Work Form</field>
+        <field name="res_model">team.work</field>
+         <field name="view_ids" eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('school_figma.view_team_work_tree')}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('school_figma.view_team_work_form')})]"/>
+        <field name="view_mode">form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Click to create a new team member.
+            </p>
+        </field>
+    </record>
+    <menuitem id="menu_website_team_work" name="Website Team Work" parent="school_mngment_sgt.menu_configuration"/>
+    <menuitem id="menu_website_team_work_form" name="Team Work" parent="menu_website_team_work"
+              action="action_team_work_form" sequence="10"/>
+</odoo>

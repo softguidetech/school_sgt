@@ -19,8 +19,12 @@
     },
     'version': '0.1',
 
-    'depends': ['base','portal','web','website', 'website_sale','website_blog'],
+    'depends': ['base', 'portal', 'web', 'website', 'website_sale', 'website_blog','school_mngment_sgt'],
     'data': [
+        "security/ir.model.access.csv",
+        'views/res_company.xml',
+        'views/team_work.xml',
+        'views/students_comments.xml',
         'views/header.xml',
         'views/footer.xml',
         'views/home.xml',

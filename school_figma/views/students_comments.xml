@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_student_student_form_inherit" model="ir.ui.view">
+            <field name="name">student.student.form.inherit</field>
+            <field name="model">student.student</field>
+            <field name="inherit_id" ref="school_mngment_sgt.view_student_student_form_1"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook/page[10]" position="after">
+                    <page string=" Student's Comment " name="comment">
+                        <group>
+                            <group>
+                                <field name="comment"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
