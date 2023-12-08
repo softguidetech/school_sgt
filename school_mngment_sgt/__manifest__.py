@@ -7,7 +7,7 @@
     'category': 'School Management',
     'summary': 'A Module For School Management',
     'author': "SGT",
-     'price': 650.00,
+     'price': 65,
     'currency': "EUR",
     'website': "http://www.softguidetech.com",
     "depends": ["stock", "purchase", "hr", "crm", "delivery", "account", "fleet", "event", "rating"],
