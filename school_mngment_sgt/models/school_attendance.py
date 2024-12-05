@@ -8,7 +8,7 @@ from dateutil.relativedelta import relativedelta as rd
 from lxml import etree
 
 from odoo import _, api, fields, models
-from odoo.exceptions import ValidationError, Warning as UserError
+from odoo.exceptions import ValidationError, RedirectWarning as UserError
 from odoo.tools import DEFAULT_SERVER_DATE_FORMAT
 
 

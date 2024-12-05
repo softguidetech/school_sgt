@@ -1,5 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_academic_year_admin,academic.year,model_academic_year,group_school_administration,1,1,1,1
+access_academic_year_admin,academic.year0,model_academic_year,group_school_administration,1,1,1,1
 access_academic_month_admin,academic.month,model_academic_month,group_school_administration,1,1,1,1
 access_standard_medium_admin,standard.medium,model_standard_medium,group_school_administration,1,1,1,1
 access_standard_division_admin,standard.division,model_standard_division,group_school_administration,1,1,1,1
@@ -32,7 +32,7 @@ access_admin_reminder_admin,student.reminder,school_mngment_sgt.model_student_re
 access_student_cast_admin,student.cast,model_student_cast,group_school_administration,1,1,1,1
 access_res_users_admin,res.users,base.model_res_users,group_school_administration,1,1,1,1
 access_subject_syllabus_admin,subject.syllabus,model_subject_syllabus,group_school_administration,1,1,1,1
-access_academic_year_parent,academic.year,model_academic_year,group_school_parent,1,0,0,0
+access_academic_year_parent,academic.year4,model_academic_year,group_school_parent,1,0,0,0
 access_academic_month_parent,academic.month,model_academic_month,group_school_parent,1,0,0,0
 access_standard_medium_parent,standard.medium,model_standard_medium,group_school_parent,1,0,0,0
 access_standard_division_parent,standard.division,model_standard_division,group_school_parent,1,0,0,0
@@ -90,14 +90,14 @@ access_student_family_contact_student,student.family.contact,school_mngment_sgt.
 access_student_reference_student,student.reference,school_mngment_sgt.model_student_reference,group_school_student,1,0,0,0
 access_student_student_user,student.student,school_mngment_sgt.model_student_student,group_school_student,1,0,0,0
 access_academic_month_student,academic.month,school_mngment_sgt.model_academic_month,group_school_student,1,0,0,0
-access_academic_year_student,academic.year,school_mngment_sgt.model_academic_year,group_school_student,1,0,0,0
+access_academic_year_student,academic.year1,school_mngment_sgt.model_academic_year,group_school_student,1,0,0,0
 access_grade_master_sudent,grade.master,school_mngment_sgt.model_grade_master,group_school_student,1,0,0,0
 access_standard_division_student,standard.division,school_mngment_sgt.model_standard_division,group_school_student,1,0,0,0
 access_standard_standard_student,standard.standard,school_mngment_sgt.model_standard_standard,group_school_student,1,0,0,0
 access_grade_line_student,grade.line,school_mngment_sgt.model_grade_line,group_school_student,1,0,0,0
 access_school_standard_user_student,school.standard,school_mngment_sgt.model_school_standard,group_school_student,1,0,0,0
 access_subject_syllabus_student,subject.syllabus,model_subject_syllabus,group_school_student,1,0,0,0
-access_academic_year_teacher,academic.year,model_academic_year,group_school_teacher,1,0,0,0
+access_academic_year_teacher,academic.year2,model_academic_year,group_school_teacher,1,0,0,0
 access_academic_month_teacher,academic.month,model_academic_month,group_school_teacher,1,0,0,0
 access_standard_medium_teacher,standard.medium,model_standard_medium,group_school_teacher,1,1,1,0
 access_standard_division_teacher,standard.division,model_standard_division,group_school_teacher,1,1,1,0
@@ -157,7 +157,7 @@ access_student_family_contact_student_isadmission,student.family.contact,school_
 access_student_reference_student_admissions,student.reference,school_mngment_sgt.model_student_reference,group_is_admission,1,0,0,0
 access_student_student_user_in_admisions,student.student,school_mngment_sgt.model_student_student,group_is_admission,1,1,0,0
 access_academic_month_student_is_admission,academic.month,school_mngment_sgt.model_academic_month,group_is_admission,1,0,0,0
-access_academic_year_student_admissionss,academic.year,school_mngment_sgt.model_academic_year,group_is_admission,1,0,0,0
+access_academic_year_student_admissionss,academic.year3,school_mngment_sgt.model_academic_year,group_is_admission,1,0,0,0
 access_grade_master_sudent_admission_school,grade.master,school_mngment_sgt.model_grade_master,group_is_admission,1,0,0,0
 access_standard_division_student_is_school_admission,standard.division,school_mngment_sgt.model_standard_division,group_is_admission,1,0,0,0
 access_standard_standard_student_admission_school,standard.standard,school_mngment_sgt.model_standard_standard,group_is_admission,1,0,0,0
@@ -344,7 +344,7 @@ access_school_event_4,school.event,event.model_event_event,school_mngment_sgt.gr
 access_event_registration_4,school.event.registration,event.model_event_registration,school_mngment_sgt.group_school_parent,1,0,0,0
 access_calendar_event_stud,calendar.event,calendar.model_calendar_event,school_mngment_sgt.group_school_student,1,0,0,0
 access_calendar_event_parent,calendar.event,calendar.model_calendar_event,school_mngment_sgt.group_school_parent,1,0,0,0
-calendar.access_calendar_event_all_employee,calendar.event,calendar.model_calendar_event,base.group_user,1,0,0,0
+access_calendar_event_all_employee,calendar.event,calendar.model_calendar_event,base.group_user,1,0,0,0
 access_school_stds_teacher,school.standard,school_mngment_sgt.model_school_standard,school_mngment_sgt.group_school_teacher,1,0,1,0
 access_sub_syllabus_teacher,subject.syllabus,school_mngment_sgt.model_subject_syllabus,school_mngment_sgt.group_school_teacher,1,0,0,0
 access_std_stad_teacher_rights,standard.standard,school_mngment_sgt.model_standard_standard,school_mngment_sgt.group_school_teacher,1,0,0,0

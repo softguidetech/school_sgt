@@ -81,10 +81,10 @@
                         <field name="currency_id" invisible="0"/>
                         <field name="currency_symbol" invisible="0"/>
                     </group>
-                    <group col="2" attrs="{'invisible':[('type','=','range')]}" string="Description">
+                    <group col="2" invisible="type ==  'range'" string="Description">
                         <field name="description" />
                     </group>
-                    <notebook colspan="4"  attrs="{'invisible':[('type','!=','range')]}">
+                    <notebook colspan="4"  invisible="type !=  'range'">
                         <page string="Function">
                             <field name="line_ids" colspan="4" nolabel="1">
                                 <tree string="Function Arguments" >
@@ -139,7 +139,7 @@
                 </group>
                 <notebook colspan="4">
                     <page string="Function">
-                        <field name="line_ids" colspan="4" nolabel="1" attrs="{'readonly':[('type','!=','range')]}">
+                        <field name="line_ids" colspan="4" nolabel="1" readonly="type !=  'range'">
                             <tree string="Function Arguments" >
                                 <field name="from_month"/>
                                 <field name="to_month"/>
@@ -177,36 +177,39 @@
         <field name="arch" type="xml">
             <form string="Student Payslip">
                 <header>
-                    <button name="payslip_confirm" class="fa fa-check" string="Confirm" states="draft" type="object" groups="school_mngment_sgt.group_school_administration"/>
-                    <button name="student_pay_fees" class="fa fa-share" string="Payment" states="confirm" type="object" groups="school_mngment_sgt.group_school_administration"/>
+                    <button name="payslip_confirm" class="fa fa-check" string="Confirm" invisible="state != 'draft'" type="object" groups="school_mngment_sgt.group_school_administration"/>
+                    <button name="student_pay_fees" class="fa fa-share" string="Payment" invisible="state != 'confirm'" type="object" groups="school_mngment_sgt.group_school_administration"/>
                     <field name="state" widget="statusbar" readonly="1"/>
                 </header>
                 <sheet>
                     <div class="oe_button_box" name="button_box">
                         <button name="invoice_view" string="Invoice" icon="fa-pencil-square-o" widget="stateinfo" class="oe_stat_button"
-                            states="pending,paid" type="object" groups="school_mngment_sgt.group_school_administration"/>
+                            invisible="state not in ['pending','paid']" type="object" groups="school_mngment_sgt.group_school_administration"/>
                     </div>
                     <h2>
-                        <field name="student_id" placeholder="Student Name" colspan="4" attrs="{'readonly':[('state','not in','draft')]}"
+                        <field name="student_id" placeholder="Student Name" colspan="4" readonly="state != 'draft'"
                                 domain="[('state','=','done')]" options="{&quot;no_create&quot;: True}"/>
                         </h2>
                     <group>
                         <group col="2" string="Information">
                             <field name="name" placeholder="Description" required="1"
-                                attrs="{'readonly':[('state','not in','draft')]}"/>
-                            <field name="number" readonly="1" attrs="{'invisible': [('state', 'not in', ('pending', 'paid'))]}"/>
-                            <field name="date" attrs="{'readonly':[('state','not in','draft')]}"/>
+                                readonly="state != 'draft'"/>
+                            <field name="number" readonly="1" invisible="state not in  ['pending', 'paid']"/>
+                            <field name="date" readonly="state != 'draft'"/>
                         </group>
                         <group col="2" string="Standard Information">
-                            <field name="standard_id" placeholder="Standard" widget="selection" attrs="{'readonly':[('state','not in','draft')]}" readonly="1"/>
-                            <field name="division_id" placeholder="Division" widget="selection" attrs="{'readonly':[('state','not in','draft')]}" readonly="1"/>
-                            <field name="medium_id" placeholder="Medium" widget="selection" attrs="{'readonly':[('state','not in','draft')]}" readonly="1"/>
+                            <field name="standard_id" placeholder="Standard" widget="selection" readonly="1"/>
+<!--                            readonly="state != 'draft'"-->
+                            <field name="division_id" placeholder="Division" widget="selection" readonly="1"/>
+<!--                            readonly="state != 'draft'"-->
+                            <field name="medium_id" placeholder="Medium" widget="selection" readonly="1"/>
+<!--                            readonly="state != 'draft'"-->
                         </group>
                     </group>
                     <group col="4">
                         <separator string="Fees Structure" colspan="4"/>
-                        <field name="fees_structure_id" required="1" placeholder="Fee Structure" attrs="{'readonly':[('state','not in','draft')]}" options="{&quot;no_create&quot;: True}"/>
-                        <field name="journal_id" widget="selection" placeholder="Journal" domain="[('type','=','sale')]" attrs="{'readonly':[('state','not in','draft')]}"/>
+                        <field name="fees_structure_id" required="1" placeholder="Fee Structure" readonly="state != 'draft'" options="{&quot;no_create&quot;: True}"/>
+                        <field name="journal_id" widget="selection" placeholder="Journal" domain="[('type','=','sale')]" readonly="state != 'draft'"/>
                         <notebook colspan="4">
                             <page string="Fees Structure">
                                 <field name="line_ids" colspan="4" nolabel="1" readonly="1"/>
@@ -219,12 +222,12 @@
                             </page>
                             <page string="Other Information">
                                 <group col="4" colspan="4">
-                                    <field name="type"  placeholder="Type" attrs="{'readonly':[('state','not in','draft')]}"/>
-                                    <field name="currency_id" placeholder="Currency" attrs="{'readonly':[('state','not in','draft')]}"/>
+                                    <field name="type"  placeholder="Type" readonly="state != 'draft'"/>
+                                    <field name="currency_id" placeholder="Currency" readonly="state != 'draft'"/>
                                     <field name="currency_symbol" invisible="0"/>
-                                    <field name="move_id" attrs="{'readonly':[('state','not in','draft')]}"/>
-                                    <field name="payment_date" placeholder="Payment Date" attrs="{'readonly':[('state','not in','draft')]}"/>
-                                    <field name="company_id" string = "School" placeholder="School Name" attrs="{'readonly':[('state','not in','draft')]}" options="{&quot;no_create&quot;: True}"/>
+                                    <field name="move_id" readonly="state != 'draft'"/>
+                                    <field name="payment_date" placeholder="Payment Date" readonly="state != 'draft'"/>
+                                    <field name="company_id" string = "School" placeholder="School Name" readonly="state != 'draft'" options="{&quot;no_create&quot;: True}"/>
                                 </group>
                             </page>
                         </notebook>
@@ -281,26 +284,26 @@
         <field name="arch" type="xml">
             <form string="Student Fees Register">
                 <header>
-                    <button name="fees_register_confirm" type="object" class="fa fa-check" string="Confirm" states="draft" groups="school_mngment_sgt.group_school_administration"/>
+                    <button name="fees_register_confirm" type="object" class="fa fa-check" string="Confirm" invisible="state != 'draft'" groups="school_mngment_sgt.group_school_administration"/>
                     <field name="state" widget="statusbar" readonly="1"/>
                 </header>
                 <sheet>
                     <group string="Information" col="4" colspan="4">
-                        <field name="name" placeholder="Name" attrs="{'readonly':[('state','not in','draft')]}"/>
+                        <field name="name" placeholder="Name" readonly="state != 'draft'"/>
                         <field name="number" readonly="1"/>
-                        <field name="date" attrs="{'readonly':[('state','not in','draft')]}"/>
-                        <field name="journal_id" placeholder="Journal" domain="[('type','=','sale')]" attrs="{'readonly':[('state','not in','draft')]}" options="{&quot;no_create&quot;: True}"/>
+                        <field name="date" readonly="state != 'draft'"/>
+                        <field name="journal_id" placeholder="Journal" domain="[('type','=','sale')]" readonly="state != 'draft'" options="{&quot;no_create&quot;: True}"/>
                         <!-- <field name="period_id" placeholder="Force Period"/> -->
-                        <field name="company_id" string = "School" placeholder="School Name" attrs="{'readonly':[('state','not in','draft')]}" options="{&quot;no_create&quot;: True}"/>
+                        <field name="company_id" string = "School" placeholder="School Name" readonly="state != 'draft'" options="{&quot;no_create&quot;: True}"/>
                     </group>
                     <group string="Fees Register for" col="4" colspan="4">
-                        <field name="fees_structure" placeholder="Fee structure" attrs="{'readonly':[('state','not in','draft')]}" options="{&quot;no_create&quot;: True}"/>
-                        <field name="standard_id" placeholder="Select Class" attrs="{'readonly':[('state','not in','draft')]}"
+                        <field name="fees_structure" placeholder="Fee structure" readonly="state != 'draft'" options="{&quot;no_create&quot;: True}"/>
+                        <field name="standard_id" placeholder="Select Class" readonly="state != 'draft'"
                             required="1" widget="selection"/>
                     </group>
                     <notebook colspan="4">
                         <page string="Student Payslip">
-                            <field name="line_ids" colspan="4" nolabel="1" attrs="{'readonly':[('state','not in','draft')]}">
+                            <field name="line_ids" colspan="4" nolabel="1" readonly="state != 'draft'">
                                 <tree string="Student Payslip" create="false">
                                     <field name="name"/>
                                     <field name="number"/>
@@ -411,7 +414,7 @@
         <field name="arch" type="xml">
             <data>
                 <xpath expr="//div[@name='buttons']" position="inside">
-                    <button name="%(action_stu_fees_form)d" type="action" class="oe_inline oe_stat_button" attrs="{'invisible':[('state', 'in', ['draft','terminate','alumni','cancel'])]}" groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_student">
+                    <button name="%(action_stu_fees_form)d" type="action" class="oe_inline oe_stat_button" readonly="state in  ['draft','terminate','alumni','cancel']" groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_student">
                         <img src="/school_mngment_sgt/static/description/payment.png" alt="Logo" style="margin-left:20px;"/>
                             <lable style="margin-left:20px;">Fees Receipt</lable>
                     </button>

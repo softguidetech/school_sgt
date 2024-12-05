@@ -138,7 +138,6 @@ class TransportParticipant(models.Model):
             offset=0,
             limit=None,
             order=None,
-            count=False,
             access_rights_uid=None,
     ):
         """Inherited method to get domain from student transportation"""
@@ -161,7 +160,6 @@ class TransportParticipant(models.Model):
             offset=offset,
             limit=limit,
             order=order,
-            count=count,
             access_rights_uid=access_rights_uid,
         )
 

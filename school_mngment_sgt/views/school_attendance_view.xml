@@ -139,33 +139,33 @@
                 <header>
                     <button name="approve_state" type="object" string="Approve"
                             groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher"
-                            attrs="{'invisible':[('state','in',['approve','reject','draft'])]}"/>
+                            invisible="state in ['draft','approve','reject']" />
                     <button name="draft_state" type="object" string="Send to Draft"
-                            attrs="{'invisible':[('state','in',['draft','approve','reject','toapprove'])]}"/>
+                            invisible="state in ['draft','approve','reject','toapprove']" />
                     <button name="toapprove_state" string="To Approve" type="object"
-                            attrs="{'invisible':[('state','in',['approve','toapprove','reject'])]}"/>
+                            invisible="state in ['approve','toapprove','reject']" />
                     <button name="reject_state" type="object" string="Reject"
-                            attrs="{'invisible':[('state','in',['reject','approve'])]}"
+                            invisible="state in ['reject','approve']" 
                             groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher"/>
                     <field name="state" widget="statusbar" readonly="1" statusbar_visible="draft, toapprove"/>
                 </header>
                 <sheet>
                     <group>
                         <group string="Leave Details">
-                            <field name="name" attrs="{'readonly':[('state','in',['approve','reject','toapprove'])]}"/>
+                            <field name="name" readonly="state in ['approve','reject','toapprove']" />
                             <label for="days" class="oe_edit_only"/>
                             <div>
                                 <div>
                                     <field name="start_date" class="oe_inline" required="1"
-                                           attrs="{'readonly':[('state','in',['approve','reject','toapprove'])]}"/>
+                                           readonly="state in ['approve','reject','toapprove']" />
                                     <span class="oe_grey">-</span>
                                     <field name="end_date" class="oe_inline" required="1"
-                                           attrs="{'readonly':[('state','in',['approve','reject','toapprove'])]}"/>
+                                           readonly="state in ['approve','reject','toapprove']" />
                                 </div>
                                 <div>
                                     <field name="days" class="oe_inline"
-                                           attrs="{'readonly':[('state','in',['approve','reject','toapprove'])]}"
                                            readonly="1"/>
+<!--                                     readonly="state in ['approve','reject','toapprove']" -->
                                     days
                                 </div>
                             </div>
@@ -173,7 +173,7 @@
                         <group string="Student Information">
                             <field name="student_id" domain="[('state','=','done')]"
                                    options="{&quot;no_create&quot;: True}"
-                                   attrs="{'readonly':[('state','in',['approve','reject','toapprove'])]}"
+                                   readonly="state in ['approve','reject','toapprove']" 
                                    context="{'student_id':True}"/>
                             <field name="roll_no" readonly="1"/>
                             <field name="standard_id" readonly="1"/>
@@ -181,13 +181,14 @@
                     </group>
                     <group col="4" colspan="4" string="Teacher Information">
                         <field name="teacher_id" options="{&quot;no_create&quot;: True}"
-                               attrs="{'readonly':[('state','in',['approve','reject','toapprove'])]}" readonly="1"/>
+                                readonly="1"/>
+<!--                        readonly="state in ['approve','reject','toapprove']" -->
                         <field name="attachments"
-                               attrs="{'readonly':[('state','in',['approve','reject','toapprove'])]}"/>
+                               readonly="state in ['approve','reject','toapprove']" />
                     </group>
                     <group string="Reason">
                         <field name="reason" required="1"
-                               attrs="{'readonly':[('state','in',['approve','reject','toapprove'])]}"/>
+                               readonly="state in ['approve','reject','toapprove']" />
                     </group>
                 </sheet>
                 <div class="oe_chatter">
@@ -243,12 +244,12 @@
         <field name="arch" type="xml">
             <form string="Daily Attendance Information">
                 <header>
-                    <button name="attendance_validate" string="Validate" states="draft" type="object"
+                    <button name="attendance_validate" string="Validate" invisible="state != 'draft'"  type="object"
                             groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher"/>
-                    <button name="attendance_draft" string="Reset To Draft" states="validate" type="object"
+                    <button name="attendance_draft" string="Reset To Draft" invisible="state != 'validate'"  type="object"
                             groups="school_mngment_sgt.group_school_administration"/>
                     <button name="do_regenerate" type="object" class="btn btn-success"
-                        attrs="{'invisible':['|', ('is_generate','=', False), ('state','not in','draft'),]}"
+                        invisible="not is_generate or state not in ['draft']" 
                         string="Re-Generate" />
                     <field name="state" widget="statusbar"/>
                 </header>
@@ -256,14 +257,14 @@
                     <separator string="Daily Attendance Sheet"/>
                     <group colspan="4" col="4">
                         <field name="user_id" placeholder="Select" required="1"
-                               options="{&quot;no_create&quot;: True}" attrs="{'readonly':[('is_generate','!=', False)]}"/>
-                        <field name="standard_id" widget="selection" domain="[('user_id','=',user_id)]" attrs="{'readonly':[('is_generate','!=', False)]}"/>
-                        <field name="date" attrs="{'readonly':[('state','not in','draft')]}" required="1"/>
+                               options="{&quot;no_create&quot;: True}" readonly="is_generate" />
+                        <field name="standard_id" widget="selection" domain="[('user_id','=',user_id)]" readonly="is_generate" />
+                        <field name="date" readonly="state != 'draft'"  required="1"/>
                         <field name="is_generate" invisible="1" />
                     </group>
                     <div>
                         <button name="get_students" type="object"
-                            class="btn btn-info atted_button" attrs="{'invisible':['|',('is_generate','!=', False),('state', '=', 'validate')]}">
+                            class="btn btn-info atted_button" invisible="is_generate or state == 'validate'" >
                             <span class="o_following">Generate</span>
                         </button>
                     </div>

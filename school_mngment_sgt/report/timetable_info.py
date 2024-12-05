@@ -56,6 +56,7 @@ class ReportTimetableInfo(models.AbstractModel):
         timetable_report = self.env["ir.actions.report"]._get_report_from_name(
             "school_mngment_sgt.timetable"
         )
+        print(self._get_timetable,"2222222222222222222222222222222222")
         docs = self.env["time.table"].browse(docids)
         return {
             "doc_ids": docids,

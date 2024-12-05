@@ -18,7 +18,7 @@
         <field name="arch" type="xml">
             <data>
                 <xpath expr="//div[@name='buttons']" position="inside">
-                    <button name="%(action_stu_result_form)d" class="oe_inline oe_stat_button" type="action" attrs="{'invisible':[('state', 'in', ['draft','terminate','alumni','cancel'])]}" groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher,school_mngment_sgt.group_school_student">
+                    <button name="%(action_stu_result_form)d" class="oe_inline oe_stat_button" type="action" invisible="state in ['draft','terminate','alumni','cancel']"  groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher,school_mngment_sgt.group_school_student">
                         <img src="/school/static/description/result.png" alt="Logo" style="margin-left:20px;"/>
                         <lable style="margin-left:20px;">Result</lable>
                     </button>
@@ -72,36 +72,36 @@
         <field name="arch" type="xml">
             <form string="Exam Information">
                 <header>
-                    <button name="set_to_draft" string="Set to Draft" type="object" states="cancelled" groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher"/>
-                    <button name="set_running" string="Start" type="object" states="draft" groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher"/>
-                    <button name="set_finish" string="Finish" type="object" states="running" groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher"/>
-                    <button name="set_cancel" string="Cancel" type="object" states="draft,running" groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher"/>
+                    <button name="set_to_draft" string="Set to Draft" type="object" invisible="state != 'cancelled'"  groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher"/>
+                    <button name="set_running" string="Start" type="object" invisible="state != 'draft'"  groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher"/>
+                    <button name="set_finish" string="Finish" type="object" invisible="state not in ['running']"  groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher"/>
+                    <button name="set_cancel" string="Cancel" type="object" invisible="state not in ['draft','running']"  groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher"/>
                     <field name="state" nolabel="1" widget="statusbar"/>
                 </header>
                 <sheet>
                     <div class="oe_button_box" name="button_box">
                         <button name="generate_result" string="Generate result" type="object" class="oe_stat_button fa fa-graduation-cap"
-                            attrs="{'invisible':[('state','in',['draft','running','cancelled'])]}"
+                            invisible="state in ['draft','running','cancelled']" 
                             groups="school_mngment_sgt.group_school_teacher,school_mngment_sgt.group_school_administration"/>
                     </div>
                     <separator string="Exam Detail"/>
-                    <group col="4" colspan="4" attrs="{'readonly': [('state','!=','draft')]}">
+                    <group col="4" colspan="4" readonly="state != 'draft'" >
                         <separator colspan="4" col="4" />
                         <field name="exam_code"/>
-                        <field name="name" placeholder="Exam Name" attrs="{'readonly': [('state','!=','draft')]}"/>
-                        <field name="grade_system" required="1" attrs="{'readonly': [('state','!=','draft')]}" widget="selection"/>
-                        <field name="academic_year" placeholder="Select Academic Year.." widget="selection" required="1" attrs="{'readonly': [('state','!=','draft')]}"/>
-                        <field name="start_date" attrs="{'readonly': [('state','!=','draft')]}" placeholder="Start Date" required="1"/>
-                        <field name="end_date" attrs="{'readonly': [('state','!=','draft')]}" placeholder="End Date" required="1"/>
+                        <field name="name" placeholder="Exam Name" readonly="state != 'draft'" />
+                        <field name="grade_system" required="1" readonly="state != 'draft'"  widget="selection"/>
+                        <field name="academic_year" placeholder="Select Academic Year.." widget="selection" required="1" readonly="state != 'draft'" />
+                        <field name="start_date" readonly="state != 'draft'"  placeholder="Start Date" required="1"/>
+                        <field name="end_date" readonly="state != 'draft'"  placeholder="End Date" required="1"/>
                     </group>
                     <group col="4" colspan="4">
                         <notebook colspan="4" >
                             <page string="Class">
-                                <field name="standard_id" nolabel="1" colspan="4" attrs="{'readonly': [('state','!=','draft')]}"
+                                <field name="standard_id" nolabel="1" colspan="4" readonly="state != 'draft'" 
                                     options="{&quot;no_open&quot;: True, &quot;no_create&quot;: True}"/>
                             </page>
                             <page string="Exam Schedule">
-                                <field name="exam_schedule_ids" nolabel="1" colspan="4" attrs="{'readonly': [('state','!=','draft')]}"
+                                <field name="exam_schedule_ids" nolabel="1" colspan="4" readonly="state != 'draft'" 
                                         context="{'default_standard_ids':standard_id,'academic_year':academic_year}">
                                     <tree name="exam_schedule" string="Exam Schedule" editable="top">
                                         <field name="standard_ids" invisible="1"/>
@@ -117,7 +117,7 @@
 
                         </notebook>
                     </group>
-                    <group col="6" colspan="4" attrs="{'readonly': [('state','!=','draft')]}">
+                    <group col="6" colspan="4" readonly="state != 'draft'" >
                         <field name="create_date" readonly="1" placeholder="Created Date" string="Exam Created Date"/>
                         <field name="write_date" readonly="1" placeholder="Last Update Date" string="Exam Update Date"/>
                     </group>
@@ -147,10 +147,11 @@
                 <field name="timetable_type" placeholder= "Select Time Table Type" readonly="1"/>
             </xpath>
             <field name="timetable_ids" position="attributes">
-                <attribute name="attrs">{'invisible': [('timetable_type','!=','regular')]}</attribute>
+                <attribute name="invisible">timetable_type != 'regular'</attribute>
+<!--                <attribute name="attrs">{'invisible': [('timetable_type','!=','regular')]}</attribute>-->
             </field>
             <field name="timetable_ids" position="after">
-                <field name="exam_timetable_line_ids" nolabel="1" attrs="{'invisible':[('timetable_type','!=','exam')]}">
+                <field name="exam_timetable_line_ids" nolabel="1" invisible="timetable_type != 'exam'" >
                     <tree name="exam_timetable" string="Exam Timetable" editable="top">
                         <field name="exm_date" required="1"/>
                         <field name="day_of_week" readonly="1" force_save="1"/>
@@ -285,15 +286,15 @@
         <field name="arch" type="xml">
             <form string="Results" create="false">
                 <header>
-                    <button name="result_confirm" class="oe_stat_button fa fa-check" string="Confirm" states="draft" type="object" groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher"/>
-                    <button name="result_re_evaluation" class="oe_stat_button fa fa-retweet" string="Re-Evaluation" states="confirm,re-access,re-access_confirm" type="object" groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher"/>
-                    <button name="re_evaluation_confirm" class="oe_stat_button fa fa-refresh" string="Re-Evaluation Confirm" states="re-evaluation" type="object" groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher"/>
+                    <button name="result_confirm" class="oe_stat_button fa fa-check" string="Confirm" invisible="state != 'draft'"  type="object" groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher"/>
+                    <button name="result_re_evaluation" class="oe_stat_button fa fa-retweet" string="Re-Evaluation" invisible="state not in ['confirm','re-access','re-access_confirm']"  type="object" groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher"/>
+                    <button name="re_evaluation_confirm" class="oe_stat_button fa fa-refresh" string="Re-Evaluation Confirm" invisible="state not in ['re-evaluation']"  type="object" groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher"/>
                     <field name="state" widget="statusbar"  statusbar_visible="draft,confirm" readonly="1" />
                 </header>
                 <sheet>
                     <group col="2" string="Exam Details">
                         <field name="s_exam_ids" placeholder="Select Examination" widget="selection" domain="[('state','=','finished')]"
-                                attrs="{'readonly' : [('state','!=','draft')]}"/>
+                                readonly="state != 'draft'" />
                     </group>
                     <group col="4" string="Student Details" colspan="4">
                         <field name="student_id" placeholder="Select Student"
@@ -304,25 +305,25 @@
                         <field name="standard_id" placeholder="Select Standard" widget="selection"
                                                 readonly="1" string="Class"/>
                         <field name="grade_system" required="1" widget="selection"
-                                                attrs="{'readonly' : [('state','!=','draft')]}"/>
+                                                readonly="state != 'draft'" />
                     </group>
                     <field name="result_ids" nolabel="1" colspan="4">
                         <tree string="Subjects" editable="bottom" create="false" delete="false">
-                            <field name="subject_id" placeholder="Select Subject" options="{'no_create': True, 'no_open': True}" attrs="{'readonly':[('state','in',['confirm','re-evaluation','re-evaluation_confirm'])]}" required="1"/>
-                            <field name="maximum_marks" attrs="{'readonly':[('state','in',['confirm','re-evaluation','re-evaluation_confirm'])]}"/>
-                            <field name="minimum_marks" attrs="{'readonly':[('state','in',['confirm','re-evaluation','re-evaluation_confirm'])]}"/>
-                            <field name="obtain_marks" attrs="{'readonly':[('state','in',['confirm','re-evaluation','re-evaluation_confirm'])]}"/>
+                            <field name="subject_id" placeholder="Select Subject" options="{'no_create': True, 'no_open': True}" readonly="state in ['confirm','re-evaluation','re-evaluation_confirm']"  required="1"/>
+                            <field name="maximum_marks" readonly="state in ['confirm','re-evaluation','re-evaluation_confirm']" />
+                            <field name="minimum_marks" readonly="state in ['confirm','re-evaluation','re-evaluation_confirm']" />
+                            <field name="obtain_marks" readonly="state in ['confirm','re-evaluation','re-evaluation_confirm']" />
                             <field name="state" invisible="1"/>
                             <field name="grade_line_id" readonly="1"/>
-                            <field name="marks_reeval" attrs="{'invisible':[('state','not in',['re-evaluation','re-evaluation_confirm'])],'readonly':[('state','in',['re-evaluation_confirm'])]}"/>
+                            <field name="marks_reeval" invisible="state not in ['re-evaluation','re-evaluation_confirm']"  readonly="state == 're-evaluation_confirm'"/>
                         </tree>
                         <form string="Subjects">
                             <group col="4">
-                                <field name="subject_id" attrs="{'readonly':[('state','in',['confirm','re-evaluation','re-evaluation_confirm'])]}"/>
-                                <field name="maximum_marks" attrs="{'readonly':[('state','in',['confirm','re-evaluation','re-evaluation_confirm'])]}"/>
-                                <field name="minimum_marks" attrs="{'readonly':[('state','in',['confirm','re-evaluation','re-evaluation_confirm'])]}"/>
-                                <field name="obtain_marks" attrs="{'readonly':[('state','in',['confirm','re-evaluation','re-evaluation_confirm'])]}"/>
-                                <field name="marks_reeval" attrs="{'invisible':[('state','not in',['re-evaluation','re-evaluation_confirm'])],'readonly':[('state','in',['re-evaluation_confirm'])]}"/>
+                                <field name="subject_id" readonly="state in ['confirm','re-evaluation','re-evaluation_confirm']" />
+                                <field name="maximum_marks" readonly="state in ['confirm','re-evaluation','re-evaluation_confirm']" />
+                                <field name="minimum_marks" readonly="state in ['confirm','re-evaluation','re-evaluation_confirm']" />
+                                <field name="obtain_marks" readonly="state in ['confirm','re-evaluation','re-evaluation_confirm']" />
+                                <field name="marks_reeval" invisible="state not in ['re-evaluation','re-evaluation_confirm']"  readonly="state == 're-evaluation_confirm'"/>
                                 <field name="state" invisible="1"/>
                                 <field name="grade_line_id" readonly="1"/>
                             </group>

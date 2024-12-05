@@ -3,14 +3,14 @@
 
 {
     'name': 'School Management SGT',
-    'version': '16.0.1.0.0',
+    'version': '17.0.1.0.0',
     'category': 'School Management',
     'summary': 'A Module For School Management',
     'author': "SGT",
-     'price': 650.00,
+     'price': 65,
     'currency': "EUR",
     'website': "http://www.softguidetech.com",
-    "depends": ["stock", "purchase", "hr", "crm", "delivery", "account", "fleet", "event", "rating"],
+    "depends": ["mail", "hr","stock", "purchase", "account", "fleet", "event", "rating", "crm", "delivery"],
     'data': [
         "security/school_security.xml",
         "security/library_security.xml",

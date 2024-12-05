@@ -15,7 +15,7 @@ class LibraryBookShelf(models.Model):
     name = fields.Char(string="Name")
 
     @api.model
-    def _search(self, domain, offset=0, limit=None, order=None, count=False, access_rights_uid=None):
+    def _search(self, domain, offset=0, limit=None, order=None, access_rights_uid=None):
         """
         We override the _search because we need to show the shelf
         according to the domain.
@@ -24,7 +24,7 @@ class LibraryBookShelf(models.Model):
             domain_id = self.env["library.rack"].browse(self._context.get('library_shelf_domain'))
             shelf_ids = domain_id.library_shelf_ids
             return shelf_ids.ids
-        return super(LibraryBookShelf, self)._search(domain, offset=offset, limit=limit, order=order, count=count,
+        return super(LibraryBookShelf, self)._search(domain, offset=offset, limit=limit, order=order,
                                                      access_rights_uid=access_rights_uid)
 
     # @api.model

@@ -53,31 +53,31 @@
             <field name="arch" type="xml">
                 <form string="Assignment Information" >
                     <header>
-                        <button name="active_assignment" class="oe_stat_button fa fa-check" states="draft" string="Active Assignment" type="object"/>
-                        <button name="done_assignments" states="active" string="Done" type="object"/>
+                        <button name="active_assignment" class="oe_stat_button fa fa-check" invisible="state != 'draft'" string="Active Assignment" type="object"/>
+                        <button name="done_assignments" invisible="state != 'active'" string="Done" type="object"/>
                         <field name="state" widget="statusbar" readonly="1"/>
                     </header>
                     <sheet>
                     <separator string="Teacher Assignment" colspan="4"/>
                     <group col="4" colspan="4">
-                        <field name="name" placeholder="Assignment Name" attrs="{'readonly':[('state','!=','draft')]}"/>
-                        <field name="teacher_id" placeholder="Teacher Name" attrs="{'readonly':[('state','!=','draft')]}" options="{&quot;no_create&quot;: True, &quot;no_search&quot;: True}"/>
+                        <field name="name" placeholder="Assignment Name" readonly="state != 'draft'"/>
+                        <field name="teacher_id" placeholder="Teacher Name" readonly="state != 'draft'" options="{&quot;no_create&quot;: True, &quot;no_search&quot;: True}"/>
                     </group>
                     <group col="4" string="Subject and Dates">
-                        <field name="standard_id" select="1" placeholder="Class" attrs="{'readonly':[('state','!=','draft')]}" widget="selection" required="1"/>
-                        <field name="assign_date" placeholder="Assign Date" attrs="{'readonly':[('state','!=','draft')]}"/>
-                        <field name="subject_id" select="1" placeholder="Subject" attrs="{'readonly':[('state','!=','draft')]}" domain="[('teacher_ids','in',teacher_id),('standard_ids','in',subject_standard_assignment)]" widget="selection"/>
-                        <field name="due_date" placeholder="Due Date" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        <field name="standard_id" select="1" placeholder="Class" readonly="state != 'draft'" widget="selection" required="1"/>
+                        <field name="assign_date" placeholder="Assign Date" readonly="state != 'draft'"/>
+                        <field name="subject_id" select="1" placeholder="Subject" readonly="state != 'draft'" domain="[('teacher_ids','in',teacher_id),('standard_ids','in',subject_standard_assignment)]" widget="selection"/>
+                        <field name="due_date" placeholder="Due Date" readonly="state != 'draft'"/>
                         <field name="subject_standard_assignment" invisible="1"/>
                     </group>
                     <group string="Submission Format Information" col="4">
-                        <field name="type_submission" attrs="{'readonly':[('state','!=','draft')]}"/>
-                        <field name="file_format" attrs="{'invisible':[('type_submission','=','hardcopy')],'readonly':[('state','!=','draft')]}"/>
+                        <field name="type_submission" readonly="state != 'draft'"/>
+                        <field name="file_format" invisible="type_submission== 'hardcopy'" readonly="state != 'draft'"/>
                     </group>
                     <separator string="Attachments" colspan="4"/>
                     <group col="2">
-                        <field name="attached_homework" placeholder="Attachment File" attrs="{'readonly':[('state','!=','draft')]}" filename="attach_files" />
-                        <field name="attach_files" invisible="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        <field name="attached_homework" placeholder="Attachment File" readonly="state != 'draft'" filename="attach_files" />
+                        <field name="attach_files" invisible="1" readonly="state != 'draft'"/>
                     </group>
                     <notebook>
                         <page string="Student Assignment Details">
@@ -86,9 +86,9 @@
                                     <field name="stud_roll_no"/>
                                     <field name="student_id"/>
                                     <field name="state"/>
-                                    <button name="done_assignment" string="Mark as Done" type="object" icon="fa-check text-success" help="done assigment" states="active"/>
-                                    <button name="reassign_assignment" string="Reassign" type="object" icon="fa-recycle" help="Re-assign assigment" states="reject"/>
-                                    <button name="%(school_mngment_sgt.student_homework_reject)d" string="Mark as Reject" icon="fa-times-circle text-danger" help="reject assignment" type="action" states="active"/>
+                                    <button name="done_assignment" string="Mark as Done" type="object" icon="fa-check text-success" help="done assigment" invisible="state != 'active'"/>
+                                    <button name="reassign_assignment" string="Reassign" type="object" icon="fa-recycle" help="Re-assign assigment" invisible="state != 'reject'"/>
+                                    <button name="%(school_mngment_sgt.student_homework_reject)d" string="Mark as Reject" icon="fa-times-circle text-danger" help="reject assignment" type="action" invisible="state != 'active'"/>
                                 </tree>
                             </field>
                         </page>
@@ -113,44 +113,44 @@
             <field name="arch" type="xml">
                 <form string="Assignment Information">
                     <header>
-                        <button name="active_assignment" class="oe_stat_button fa fa-check" states="draft" string="Active"
+                        <button name="active_assignment" class="oe_stat_button fa fa-check" invisible="state != 'draft'" string="Active"
                                 type="object" groups="school_mngment_sgt.group_school_teacher,school_mngment_sgt.group_school_administration"/>
-                        <button name="done_assignment" class="oe_stat_button fa fa-check" states="active" string="Done"
+                        <button name="done_assignment" class="oe_stat_button fa fa-check" invisible="state != 'active'" string="Done"
                                 type="object" groups="school_mngment_sgt.group_school_teacher,school_mngment_sgt.group_school_administration"/>
-                        <button name="%(school_mngment_sgt.student_homework_reject)d" string="Reject" type="action" states="active"
+                        <button name="%(school_mngment_sgt.student_homework_reject)d" string="Reject" type="action" invisible="state != 'active'"
                                 groups="school_mngment_sgt.group_school_teacher,school_mngment_sgt.group_school_administration"/>
-                        <button name="reassign_assignment" states="reject" string="Re-Assign" type="object"
+                        <button name="reassign_assignment" invisible="state != 'reject'" string="Re-Assign" type="object"
                                 groups="school_mngment_sgt.group_school_teacher, school_mngment_sgt.group_school_administration"/>
                         <field name="state" widget="statusbar" readonly="1"/>
                     </header>
                    <sheet>
                     <separator colspan="4"/>
                     <group col="4" string="Assignment Information">
-                        <field name="student_id" placeholder="Student" attrs="{'readonly':[('state','!=','draft')]}" options="{&quot;no_create&quot;: True, &quot;no_search&quot;: True}" domain="[('state','=','done')]"/>
+                        <field name="student_id" placeholder="Student" readonly="state != 'draft'" options="{&quot;no_create&quot;: True, &quot;no_search&quot;: True}" domain="[('state','=','done')]"/>
                         <field name="stud_roll_no" invisible="1"/>
-                        <field name="name" placeholder="Assignment Name" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        <field name="name" placeholder="Assignment Name" readonly="state != 'draft'"/>
                         <newline />
-                        <field name="teacher_id" placeholder="Teacher" attrs="{'readonly':[('state','!=','draft')]}" options="{&quot;no_create&quot;: True, &quot;no_search&quot;: True}"/>
+                        <field name="teacher_id" placeholder="Teacher" readonly="state != 'draft'" options="{&quot;no_create&quot;: True, &quot;no_search&quot;: True}"/>
                     </group>
                     <group col="4" string="Standard and Division">
-                        <field name="standard_id" placeholder="Class" attrs="{'readonly':[('state','!=','draft')]}" widget="selection"/>
-                        <field name="subject_id"  placeholder="Subject" attrs="{'readonly':[('state','!=','draft')]}" widget="selection" domain="[('teacher_ids','in',teacher_id),('standard_ids','in',student_standard)]"/>
+                        <field name="standard_id" placeholder="Class" readonly="state != 'draft'" widget="selection"/>
+                        <field name="subject_id"  placeholder="Subject" readonly="state != 'draft'" widget="selection" domain="[('teacher_ids','in',teacher_id),('standard_ids','in',student_standard)]"/>
                     </group>
                     <group col="4" string="Dates">
-                        <field name="assign_date" placeholder="Assign Date" attrs="{'readonly':[('state','!=','draft')]}"/>
-                        <field name="due_date" placeholder="Due Date" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        <field name="assign_date" placeholder="Assign Date" readonly="state != 'draft'"/>
+                        <field name="due_date" placeholder="Due Date" readonly="state != 'draft'"/>
                     </group>
                         <group string="Upload / Download Attachments">
-                            <field name="attached_homework" placeholder="Attachment File" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="attached_homework" placeholder="Attachment File" readonly="state != 'draft'"/>
                         </group>
                         <group string="Submission Details" col="4">
-                            <field name="submission_type" attrs="{'readonly':[('state','!=','draft')]}"/>
-                            <field name="attachfile_format" placeholder="e.g. docx" attrs="{'invisible':[('submission_type','=','hardcopy')],'readonly':[('state','!=','draft')]}"/>
-                            <field name="submit_assign" filename="file_name" attrs="{'invisible':[('submission_type','=','hardcopy')],'readonly':[('state','!=','active')]}"/>
+                            <field name="submission_type" readonly="state != 'draft'"/>
+                            <field name="attachfile_format" placeholder="e.g. docx" readonly="state != 'draft'" invisible="submission_type == 'hardcopy'"/>
+                            <field name="submit_assign" filename="file_name" invisible="submission_type == 'hardcopy'" readonly="state != 'active'"/>
                             <field name="file_name" invisible="1"/>
                         </group>
-                        <group string="Reject Assignment" attrs="{'invisible':[('state','in',['draft','active','done'])]}">
-                            <field name="rejection_reason" attrs="{'invisible':[('state','in',['draft','active','done'])]}"/>
+                        <group string="Reject Assignment" invisible="state in  ['draft','active','done']">
+                            <field name="rejection_reason" invisible="state in  ['draft','active','done']"/>
                         </group>
                         <field name="teacher_assignment_id" invisible="1"/>
                         <field name="student_standard" invisible="1"/>
@@ -226,7 +226,7 @@
             <field name="arch" type="xml">
                 <data>
                     <xpath expr="//div[@name='buttons']" position="inside">
-                        <button name="%(action_school_student_assignment_form_btn)d" type="action" class="oe_stat_button" attrs="{'invisible':[('state', 'in', ['draft','terminate','alumni','cancel'])]}" groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher,school_mngment_sgt.group_school_student">
+                        <button name="%(action_school_student_assignment_form_btn)d" type="action" class="oe_stat_button" invisible="state in  ['draft','terminate','alumni','cancel']" groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher,school_mngment_sgt.group_school_student">
                             <img src="/school_mngment_sgt/static/description/homework.png" alt="Logo" style="margin-left:20px;"/>
                             <lable style="margin-left:20px;">Assignment</lable>
                         </button>

@@ -477,15 +477,22 @@ class SchoolSchool(models.Model):
                                   student admission""",
     )
 
+    # @api.model
+    # def create(self, vals):
+    #     """Inherited create method to assign company_id to school"""
+    #     res = super(SchoolSchool, self).create(vals)
+    #     main_company = self.env.ref("base.main_company")
+    #     res.company_id.parent_id = main_company.id
+    #     return res
     @api.model
     def create(self, vals):
         """Inherited create method to assign company_id to school"""
         res = super(SchoolSchool, self).create(vals)
         main_company = self.env.ref("base.main_company")
-        res.company_id.parent_id = main_company.id
+        res.write({'company_id': main_company.id})
         return res
 
-
+#
 class SubjectSubject(models.Model):
     """Defining a subject """
 
@@ -555,7 +562,6 @@ class SubjectSubject(models.Model):
             offset=0,
             limit=None,
             order=None,
-            count=False,
             access_rights_uid=None,
     ):
         """Override method to get exam of subject selection."""
@@ -574,7 +580,6 @@ class SubjectSubject(models.Model):
             offset=offset,
             limit=limit,
             order=order,
-            count=count,
             access_rights_uid=access_rights_uid,
         )
 

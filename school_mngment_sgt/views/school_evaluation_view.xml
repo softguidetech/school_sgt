@@ -28,7 +28,7 @@
             <data>
                 <xpath expr="//div[@name='buttons']" position="inside">
                     <button name="%(action_student_eval_form_actions)d" type="action" class="oe_stat_button"
-                        attrs="{'invisible':[('state', 'in', ['draft','terminate','alumni','cancel'])]}"
+                        invisible="state in ['draft','terminate','alumni','cancel']"
                         groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher,school_mngment_sgt.group_school_student">
                         <img src="/school_mngment_sgt/static/description/evaluation.png" alt="Logo" style="margin-left:20px;"/>
                             <lable style="margin-left:20px;">Evaluation</lable>
@@ -64,7 +64,7 @@
                 <newline/>
                 <group expand="1" string="Group By">
                     <filter string="Type" name="type" context="{'group_by':'type'}"/>
-                    <filter string="Student" name="students" context="{'group_by':'student_id'}"/>
+                    <filter string="Student" name="student_id" context="{'group_by':'student_id'}"/>
                 </group>
             </search>
         </field>
@@ -77,26 +77,26 @@
         <field name="arch" type="xml">
             <form string="Student Evaluation">
                 <header>
-                    <button name="set_start" string="Start" type="object" states="draft" class="oe_highlight fa fa-play" groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher"/>
-                    <button name="set_finish" string="Finish" class="fa fa-step-forward" type="object" states="start" groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher"/>
-                    <button name="set_cancel" string="Cancel" class="fa fa-ban" type="object" states="start,draft" groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher"/>
-                    <button name="set_draft" string="Set to Draft" class="fa fa-play" type="object" states="cancelled" groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher"/>
+                    <button name="set_start" string="Start" type="object" invisible="state not in ['draft']"  class="oe_highlight fa fa-play" groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher"/>
+                    <button name="set_finish" string="Finish" class="fa fa-step-forward" type="object" invisible="state not in ['start']"  groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher"/>
+                    <button name="set_cancel" string="Cancel" class="fa fa-ban" type="object" invisible="state not in ['start','draft']"  groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher"/>
+                    <button name="set_draft" string="Set to Draft" class="fa fa-play" type="object" invisible="state != 'cancelled'"  groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher"/>
                     <field name="state" readonly="1" widget="statusbar"/>
                 </header>
                 <sheet>
                     <separator string="Student Evaluation"/>
-                    <group attrs="{'readonly': [('state','in',['finished', 'cancelled'])]}">
+                    <group readonly="state in ['finished','cancelled']">
                         <group>
                              <field name="student_id" placeholder="Select Or Create Student Name" domain="[('state','=','done')]"
-                                 attrs="{'readonly':[('state','not in','draft')],'required':[('type','=','student')]}" options="{&quot;no_create&quot;: True}"/>
-                             <field name="date" style="width: 84%" attrs="{'readonly':[('state','not in','draft')]}"/>
+                                 readonly="state not in ['draft']" required="type == 'student'" options="{&quot;no_create&quot;: True}"/>
+                             <field name="date" style="width: 84%" readonly="state not in ['draft']" />
                              <field name='active' invisible='1'/>
                         </group>
                         <group>
                              <field name="type" readonly="1"/>
                              <field name="username"/>
                              <button name="get_record" type='object' class="oe_inline oe_stat_button"
-                                attrs="{'invisible' : [('state', '!=', 'draft')]}"
+                                invisible="state not in ['draft']" 
                                 groups="school_mngment_sgt.group_school_administration,school_mngment_sgt.group_school_teacher">
                             <img src="/school_mngment_sgt/static/description/index1.png" alt="Logo"
                                 style="height:25px;width:50px;float:left;"/>
@@ -108,7 +108,7 @@
                     <notebook colspan="4">
                         <page string="General">
                             <field name="eval_line_ids" nolabel='1'  context="{'type':type}"
-                                attrs="{'readonly':[('state','!=','start')]}">
+                                readonly="state not in ['start']" >
                                 <tree string="Evaluation Line" editable='top'>
                                     <field name="stu_eval_id" domain="[('type','=',context.get('type'))]" options="{&quot;no_create&quot;: True}"/>
                                     <field name="point_id" options="{&quot;no_create&quot;: True}"/>
@@ -133,27 +133,27 @@
         <field name="arch" type="xml">
             <form name="teacher_evaluation" string="Teacher Evaluation">
                 <header>
-                    <button name="set_start" string="Start" type="object" states="draft" class="oe_highlight fa fa-play" groups="school_mngment_sgt.group_school_administration"/>
-                    <button name="set_finish" string="Finish" class="fa fa-step-forward" type="object" states="start" groups="school_mngment_sgt.group_school_administration"/>
-                    <button name="set_cancel" string="Cancel" class="fa fa-ban" type="object" states="start,draft" groups="school_mngment_sgt.group_school_administration"/>
-                    <button name="set_draft" string="Set to Draft" class="fa fa-play" type="object" states="cancelled" groups="school_mngment_sgt.group_school_administration"/>
+                    <button name="set_start" string="Start" type="object" invisible="state not in ['draft']"  class="oe_highlight fa fa-play" groups="school_mngment_sgt.group_school_administration"/>
+                    <button name="set_finish" string="Finish" class="fa fa-step-forward" type="object" invisible="state not in ['start']"  groups="school_mngment_sgt.group_school_administration"/>
+                    <button name="set_cancel" string="Cancel" class="fa fa-ban" type="object" invisible="state not in ['start','draft']"  groups="school_mngment_sgt.group_school_administration"/>
+                    <button name="set_draft" string="Set to Draft" class="fa fa-play" type="object" invisible="state != 'cancelled'"  groups="school_mngment_sgt.group_school_administration"/>
                     <field name="state" readonly="1" widget="statusbar"/>
                 </header>
                 <sheet>
                     <separator string="Teacher Evaluation"/>
-                    <group attrs="{'readonly': [('state','in',['finished', 'cancelled'])]}">
+                    <group readonly="state in ['finished','cancelled']">
                         <group>
                             <field name="student_id" required="0" invisible="1"/>
                             <field name="teacher_id" placeholder="Select Or Create Teacher Name"
-                                    attrs="{'readonly':[('state','not in','draft')],
-                                            'required': [('type','=','faculty')]}" options="{&quot;no_create&quot;: True}"/>
-                            <field name="date" style="width: 84%%" attrs="{'readonly':[('state','not in','draft')]}"/>
+                                    readonly="state not in ['start']"  required="type == 'faculty'" options="{&quot;no_create&quot;: True}"/>
+                            <field name="date" style="width: 84%%" readonly="state not in ['draft']" />
                         </group>
                         <group>
                              <field name="type" readonly="1"/>
-                             <field name="username" attrs="{'readonly':[('state','not in','draft')]}" readonly="1"/>
+                             <field name="username" readonly="1"/>
+<!--                            readonly="state not in ['draft']"-->
                              <button name="get_record" type='object' class="oe_inline oe_stat_button"
-                                attrs="{'invisible' : [('state', '!=', 'draft')]}"
+                                invisible="state not in ['draft']" 
                                 groups="school_mngment_sgt.group_school_administration">
                             <img src="/school_mngment_sgt/static/description/index1.png" alt="Logo"
                                 style="height:25px;width:50px;float:left;"/>
@@ -165,7 +165,7 @@
                     <notebook colspan="4">
                         <page string="General">
                             <field name="eval_line_ids" nolabel='1' context="{'type':type}"
-                                attrs="{'readonly':[('state','!=','start')]}">
+                                readonly="state not in ['start']" >
                                 <tree string="Evaluation Line" editable='top'>
                                     <field name="stu_eval_id" domain="[('type','=',context.get('type'))]" options="{&quot;no_create&quot;: True}"/>
                                     <field name="point_id" options="{&quot;no_create&quot;: True}"/>
@@ -211,7 +211,7 @@
                 <newline />
                 <group expand="0" string="Group By..." colspan="6" col="4">
                     <filter string="Type" name="type" context="{'group_by':'type'}"/>
-                    <filter string="Teacher" name="student_id" context="{'group_by':'teacher_id'}"/>
+                    <filter string="Teacher" name="teacher_id" context="{'group_by':'teacher_id'}"/>
                 </group>
             </search>
         </field>
